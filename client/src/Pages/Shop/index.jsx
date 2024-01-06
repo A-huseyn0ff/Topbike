@@ -1,29 +1,38 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import './Shop.scss'
+import "./Shop.scss";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaRegHeart } from "react-icons/fa";
 import { SlBag } from "react-icons/sl";
 import { FiSearch } from "react-icons/fi";
+import { CiFilter } from "react-icons/ci";
+import grider from "../../Assets/Screenshot 2024-01-06 044811.png";
+import { useSelector, useDispatch } from 'react-redux';
+import { wihlsitAdd, wihlistDelete } from '../../Components/Wishlist/wishlistSlice';
 const Shop = () => {
   const [shop, setShop] = useState([]);
-  const [grid, setgrid] = useState(4)
-
-
-
-
-  function handlegrid3() {
-    setgrid(3)
+  const [grid, setGrid] = useState(4);
+  const [current, setCurrent] = useState(1);
+  const [pagePerData] = useState(12);
+  const wishlistItems = useSelector((state) => state.wishlist.value);
+  const dispatch = useDispatch();
+  const pagenum = [];
+  for (let i = 1; i <= Math.ceil(shop.length / pagePerData); i++) {
+    pagenum.push(i);
   }
-  function handlegrid4() {
-    setgrid(4)
-  }
-  function handlegrid5() {
-    setgrid(5)
-  }
-  function handlegrid2() {
-    setgrid(2)
-  }
+
+  const lastElement = current * pagePerData;
+  const firstElement = lastElement - pagePerData;
+
+  const pagedatas = useMemo(
+    () => shop.slice(firstElement, lastElement),
+    [shop, current]
+  );
+  
+  const handleGridChange = (value) => {
+    setGrid(value);
+  };
+
   useEffect(() => {
     const fetchShop = async () => {
       try {
@@ -31,146 +40,134 @@ const Shop = () => {
         const jsonShop = await res.json();
         setShop(jsonShop);
       } catch (error) {
-        console.error("Error fetching  data:", error);
+        console.error("Error fetching data:", error);
       }
     };
 
     fetchShop();
   }, []);
+  const isProductInWishlist = (productId) => {
+    return wishlistItems.some((item) => item._id === productId);
+  };
+
+  const handleWishlistToggle = (product) => {
+    if (isProductInWishlist(product._id)) {
+    
+      dispatch(wihlistDelete(product));
+    } else {
+      
+      dispatch(wihlsitAdd(product));
+    }
+  };
   return (
     <>
-{/* {shop.map((item)=>
-  item.design.map((y)=>{
-    
-      {y.productsec.map((x,xindex)=>(
-        <div className='Productssec' key={xindex}>
-        <img src={x.image} alt="" />
-<div className='title'>     
-<h2>{x.title}</h2>
-<div className='shop_nav'>
-  <Link to="/">Home</Link>
-  <IoIosArrowForward/>
-  <p>{x.title}</p>
-</div>
-</div>  
-        
-        </div>
-      ))}
-    {y.salesec.map(((z,zindex)=>(
-<div></div>
-  )))}
-})
-)} */}
- {shop.map((item) =>(
-  <>
-        {item.design.map((y) => (
-          <div key={y.title} className='design'>
-            {y.productsec.map((x, xindex) => (
-              <div key={xindex} className="Productssec">
-                <img src={x.image} alt="" />
-                <div className="title">
-                  <h2>{x.title}</h2>
-                  <div className="shop_nav">
-                    <Link to="/">Home</Link>
-                    <IoIosArrowForward />
-                    <p>{x.title}</p>
+      {pagedatas.map((item, index) => (
+        <div key={index} className="shop-container">
+          {item.design.map((y) => (
+            <div key={y.title} className="design">
+              {y.productsec.map((x, xindex) => (
+                <div key={xindex} className="Productssec">
+                  <img src={x.image} alt="" />
+                  <div className="title">
+                    <h2>{x.title}</h2>
+                    <div className="shop_nav">
+                      <Link to="/">Home</Link>
+                      <IoIosArrowForward />
+                      <p>{x.title}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-            {y.salesec.map((z, zindex) => (
-              <div key={zindex} className="Salesec">
-                <img src={z.image} alt="" />
-                <div className="title">
-                  <h2>{z.title}</h2>
-                  <p>{z.subtitle}</p>
-                  <a href='#'>{z.btn}</a>
+              ))}
+              {y.salesec.map((z, zindex) => (
+                <div key={zindex} className="Salesec">
+                  <img src={z.image} alt="" />
+                  <div className="title">
+                    <h2>{z.title}</h2>
+                    <p>{z.subtitle}</p>
+                    <a href="#">{z.btn}</a>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        ))}
-        <section className='shop_products'>
-          <div className='product_row' style={{ gridTemplateColumns: `repeat(${grid}, 1fr)` }}>
-        {item.BikeAccessories.map((acc,accIndex)=>(
-          <div className='product_col' key={accIndex}>
-          <div className='product_img'>
-          <img src={acc.images[0]} alt="" />
-          {acc.oldprice && <span>SALE</span>}
-          <div className='products_nav'>
-              <a href="" className='heart'>
-                  <FaRegHeart />
-              </a>
-              <a href="" className='bag'>
-                  <SlBag/>
-              </a>
-              <a href="" className='search'>
-                  <FiSearch/>
-              </a>
-          </div>
-          </div>
-          <p>{acc.productName}</p>
-          <div className='prices'>
-              <h1 style={{color:'#ffab00'}}>{acc.newprice}</h1>
-              <del style={{color:'#979797'}}>{acc.oldprice}</del>
-          </div>
-      </div>
+              ))}
+            </div>
           ))}
-           {item.bicycles.map((datas,dataIndex)=>(
-            <div className='product_col' key={dataIndex}>
-                <div className='product_img'>
-                <img src={datas.images[0]} alt="" />
-                {datas.oldprice && <span>SALE</span>}
-                <div className='products_nav'>
-                    <a href="" className='heart'>
-                        <FaRegHeart />
-                    </a>
-                    <a href="" className='bag'>
-                        <SlBag/>
-                    </a>
-                    <a href="" className='search'>
-                        <FiSearch/>
-                    </a>
+          <section className="shop_products">
+            <div className="category_container">
+              <div className="filter_container">
+                <div className="filter">
+                  <CiFilter className="icon" />
+                  <p>FILTER</p>
                 </div>
+              </div>
+              <div className="sort_container">
+                <div className="sort">
+                  <button onClick={() => handleGridChange(2)}>2</button>
+                  <button onClick={() => handleGridChange(3)}>3</button>
+                  <button onClick={() => handleGridChange(4)}>4</button>
+                  <button onClick={() => handleGridChange(5)}>5</button>
+                  <img src={grider} alt="" />
+                  <select name="" id="" className="sort_select">
+                    <option value="Select">Featured</option>
+                    <option value="Best Selling">Best Selling</option>
+                    <option value="Alphabetically, A-Z">
+                      Alphabetically, A-Z
+                    </option>
+                    <option value="Price, high to low">
+                      Price, high to low
+                    </option>
+                    <option value="Price, low to high">
+                      Price, low to high
+                    </option>
+                  </select>
                 </div>
-                <p>{datas.productName}</p>
-                <div className='prices'>
-                    <h1 style={{color:'#ffab00'}}>{datas.newprice}</h1>
-                    <del style={{color:'#979797'}}>{datas.oldprice}</del>
-                </div>
+              </div>
             </div>
-        ))}
-         {item.Helmet.map((hel,helIndex)=>(
-            <div className='product_col' key={helIndex}>
-                <div className='product_img'>
-                <img src={hel.images[0]} alt="" />
-                {hel.oldprice && <span>SALE</span>}
-                <div className='products_nav'>
-                    <a href="" className='heart'>
-                        <FaRegHeart />
-                    </a>
-                    <a href="" className='bag'>
-                        <SlBag/>
-                    </a>
-                    <a href="" className='search'>
-                        <FiSearch/>
-                    </a>
-                </div>
-                </div>
-                <p>{hel.productName}</p>
-                <div className='prices'>
-                    <h1 style={{color:'#ffab00'}}>{hel.newprice}</h1>
-                    <del style={{color:'#979797'}}>{hel.oldprice}</del>
-                </div>
-            </div>
-        ))}
-        </div>
-        </section>
-        
-</>
-))}
-    </>
-  )
-}
 
-export default Shop
+            <div
+              className="product_row"
+              style={{ gridTemplateColumns: `repeat(${grid}, 1fr)` }}
+            >
+              {item.allproducts.map((pro) =>
+                pro.products.map((datas, dataIndex) => (
+                  <div className="product_col" key={dataIndex}>
+                    <div className="product_img">
+                      <img src={datas.images[0]} alt="" />
+                      {datas.oldprice && <span>SALE</span>}
+                      <div className="products_nav">
+                        <a  onClick={() => handleWishlistToggle(datas)}
+                            className={`heart ${isProductInWishlist(datas._id) ? 'active' : ''}`}>
+                          <FaRegHeart />
+                        </a>
+                        <a  className="bag">
+                          <SlBag />
+                        </a>
+                        <a  className="search">
+                          <FiSearch />
+                        </a>
+                      </div>
+                    </div>
+                    <p>{datas.productName}</p>
+                    <div className="prices">
+                      <h1 style={{ color: "#ffab00" }}>{datas.newprice}</h1>
+                      {datas.oldprice && (
+                        <del style={{ color: "#979797" }}>{datas.oldprice}</del>
+                      )}
+                    </div>
+                  </div>
+                ))
+              )}
+            </div>
+            <div className="pagination">
+              {pagenum.map((page) => (
+                <button key={page} onClick={() => setCurrent(page)}>
+                  {page}
+                </button>
+              ))}
+            </div>
+          </section>
+        </div>
+      ))}
+    </>
+  );
+};
+
+export default Shop;

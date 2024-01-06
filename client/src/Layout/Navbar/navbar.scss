@@ -72,6 +72,7 @@ nav{
         
     }
     .icons{
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -80,6 +81,36 @@ nav{
             color: white;
            font-size: 24px;
           
+        }
+        .wishlistnew{
+            position: absolute;
+            bottom: 15px;
+            left: 95px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            color: #fff!important;
+            text-align: center;
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 22px;
+            background: #ffab00;
+            
+        }
+        .basketnew{
+           
+            position: absolute;
+            bottom: 15px;
+            left: 132px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            color: #fff!important;
+            text-align: center;
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 22px;
+            background: #ffab00;
         }
     }
     }
@@ -102,3 +133,124 @@ nav{
       transform: translateY(0);
     }
   }
+
+  .wishlist{
+    width: 100%;
+    height: 200vh;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 101;
+    position: fixed;
+  
+  }
+  .wishlist_container{
+    height: 100%;
+    width: 380px;
+    background-color: white;
+    position: fixed;
+    z-index: 110;
+    opacity: 1 !important;
+    right: 0;
+    .wishlist_top{
+        position: relative;
+        top: 0;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #ecebeb;
+        .close{
+            transition: 0.3s;
+            cursor: pointer;
+           
+            width: 40px;
+            height: 100%;
+           
+            color: #000;
+            border-right: 1px solid #dedede;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 500;
+            text-align: center;
+            line-height: 16px;
+        }
+        .close:hover{
+            background-color: #ffab00;
+            color: white;
+            border-color: #ffab00;
+        }
+        h2{
+            font-weight: 500;
+    line-height: 43px;
+    
+    height: 45px;
+    color: #000;
+   
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 20px;
+        }
+        span{
+           
+           
+           height: 100%;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+            color: #000;
+            border-left: 1px solid #dedede;
+            font-size: 24px;
+            padding: 14px;
+            text-transform: uppercase;
+            font-weight: 500;
+            text-align: center;
+            
+        }
+    }
+    .wishlist_middle{
+        display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+.wishlistCard{
+    gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e1e1e1;
+    .cardImage{
+        width: 76.84px;
+        height: 76.84px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .cardText{
+        width: 60%;
+        h3{
+            font-family: "Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+        }
+        p{
+            font-family: "Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+        }
+    }
+}
+    }
+}

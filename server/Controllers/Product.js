@@ -20,8 +20,8 @@ export const updateProduct = async (req, res) => {
 };
 export const postProduct = async (req, res) => {
   try {
-    const { design,bicycles,BikeAccessories,Helmet }=req.body
-    const Productdata = new ProductSchema({ design,bicycles,BikeAccessories,Helmet });
+    const { design,allproducts }=req.body
+    const Productdata = new ProductSchema({ design,allproducts });
     const save=await Productdata.save();
     res.status(201).json(save);
   } catch (error) {

@@ -14,33 +14,46 @@ const ProductSchema = new mongoose.Schema(
         btn:{type:String}
       }]
       }],
-        bicycles:[{
-          productName: { type: String, required: true },
-       images:[{type:String}],
-        oldprice:{type:String},
-        about:{type:String},
-        discountRate:{type:String},
-        newprice:{type:String,required:true},
-        category:[{type:String}]
-        }],
-        BikeAccessories:[{
-          productName: { type: String, required: true },
-       images:[{type:String}],
-        oldprice:{type:String},
-        about:{type:String},
-        discountRate:{type:String},
-        newprice:{type:String,required:true},
-        category:[{type:String}]
-        }],
-        Helmet:[{
-          productName: { type: String, required: true },
-       images:[{type:String}],
-        oldprice:{type:String},
-        about:{type:String},
-        discountRate:{type:String},
-        newprice:{type:String,required:true},
-        category:[{type:String}]
-        }]
+      allproducts:[{
+        
+          categoryName:{type:String},
+          products:[{
+            productName: { type: String, required: true },
+             images:[{type:String}],
+              oldprice:{type:String},
+              about:{type:String},
+              discountRate:{type:String},
+              newprice:{type:String,required:true},
+          }]
+        
+      }]
+      //   bicycles:[{
+      //     productName: { type: String, required: true },
+      //  images:[{type:String}],
+      //   oldprice:{type:String},
+      //   about:{type:String},
+      //   discountRate:{type:String},
+      //   newprice:{type:String,required:true},
+      //   category:[{type:String}]
+      //   }],
+      //   BikeAccessories:[{
+      //     productName: { type: String, required: true },
+      //  images:[{type:String}],
+      //   oldprice:{type:String},
+      //   about:{type:String},
+      //   discountRate:{type:String},
+      //   newprice:{type:String,required:true},
+      //   category:[{type:String}]
+      //   }],
+      //   Helmet:[{
+      //     productName: { type: String, required: true },
+      //  images:[{type:String}],
+      //   oldprice:{type:String},
+      //   about:{type:String},
+      //   discountRate:{type:String},
+      //   newprice:{type:String,required:true},
+      //   category:[{type:String}]
+      //   }]
       },
       { timestamps: true }
 );
