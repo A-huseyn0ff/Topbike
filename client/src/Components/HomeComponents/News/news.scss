@@ -1,0 +1,119 @@
+.news{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-bottom: 50px;
+h2{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #000;
+    text-transform: none;
+    border: none;
+    border-color: #000;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+.myNews{
+    width: 90%;
+    .slider{
+        
+        
+        .news_img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            transition: 0.3s;
+            img{
+                height: 100%;
+                width: 100%;
+                transition: 0.3s;
+                        }
+            .date{
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                width: 68px;
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 3px;
+                align-items: center;
+                height: 68px;
+                background-color: white;
+               span{
+                border-bottom: 0.5px solid black;
+                width: 40%;
+               }
+            }
+        }
+        .news_img:hover{
+            background-color: white;
+            opacity: 0.7;
+            img{
+transform: scale(1.1);
+            }
+        }
+        .news_txt{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            p{
+                font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #83868c;
+    text-transform: uppercase;
+            }
+            h3{
+                font-size: 22px;
+                display: inline-block;
+                color: #000;
+                font-weight: 500;
+                transition: all .3s ease;
+                font-family: SofiaPro;
+                margin-bottom: 15px;
+            }
+            a{
+                width: 85px;
+                color: #000;
+                font-size: 18px;
+                font-weight: 500;
+                text-decoration: none;
+                border-bottom: 1px solid black;
+                
+            }
+            a:hover{
+                color: #ffab00;
+                border-color: #ffab00;
+            }
+        }
+    }
+    
+    .swiper-pagination{
+        position: relative;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px !important;
+    }
+    .swiper-pagination-bullet{
+        width: 10px;
+        height: 10px;
+        background-color: #d8d8d8;
+    }
+    .swiper-pagination-bullet-active{
+        width: 10px;
+        height: 10px;
+        background-color: black;
+      
+    }
+    
+}
+}

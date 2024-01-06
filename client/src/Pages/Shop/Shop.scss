@@ -1,0 +1,264 @@
+.design{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+    .Productssec{
+        width: 100%;
+        height: 300px;
+        
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 100%;
+            height: 500px;
+            position: relative;
+        }
+        .title{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            h2{
+                font-size: 40px;
+        font-weight: 500;
+        letter-spacing: 2px;
+            }
+            .shop_nav{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                a{
+                    font-size: 16px;
+                    text-decoration: none;
+        font-weight: 400;
+        color: #000;
+                }
+                p{
+                    font-size: 16px;
+                    
+        font-weight: 400;
+        color: #000;   
+                }
+            }
+        }
+    }
+    .Salesec{
+      margin-top: 40px;
+     
+        width: 90%;
+        height: 100%;
+        
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 100%;
+            height: 100%;
+           
+        }
+        .title{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h2{
+                font-size: 40px;
+        color: #000;
+        font-weight: 500;
+        
+        letter-spacing: 2px;
+            }
+            p{
+                margin-top: 5px;
+                font-size: 16px;
+                color: #000;
+                font-weight: 500;
+                
+                letter-spacing: .1em;
+            }
+            a{
+                margin-top: 25px;
+                display: inline-flex;
+                text-align: center;
+                justify-content: center;
+                padding: 10px 12px;
+                font-size: 14px;
+                color: #000;
+                font-weight: 600;
+                text-decoration: none;
+                font-family: SofiaPro;
+                border: 2px solid #000;
+                text-transform: uppercase;
+                transition: .3s;
+            }
+            a:hover{
+                background-color: #ffab00;
+                border-color: #ffab00;
+                color: white;
+            }
+        }
+    }
+    .Salesec:hover{
+        img{
+            transition: .5s ease;
+            transform: scale(1.1);
+        }
+    }
+}
+.shop_products{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .product_row{
+            width: 90%;
+            display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 50px;
+grid-row-gap: 50px;
+
+.product_col{
+    .product_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            transition: 1s;
+        }
+        span{
+            right: 15px;
+            top: 15px;
+            position: absolute;
+            border: 1px solid #ed1f1f;
+            background-color: #ed1f1f;
+            color: white;
+            padding: 5px 10px;
+            font-size: 10px;
+    letter-spacing: .3em;
+    padding: 5px 12px;
+        }
+        .products_nav{
+            position: absolute;
+            right: 15px;
+           
+           display: flex;
+           flex-direction: column;
+           gap: 10px;
+           
+           
+           
+           .heart{
+            transition: 0.6s;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateX(30px);
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 3px 10px #00000014;
+            background-color: white;
+            border-radius: 50%;
+            padding: 15px ;
+            font-size: 20px;
+           }
+           .bag{
+            transition: 0.9s;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateX(30px);
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 3px 10px #00000014;
+            background-color: white;
+            border-radius: 50%;
+            padding: 15px ;
+            font-size: 20px;
+           }
+           .search{
+            transition: 1.2s;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateX(30px);
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 3px 10px #00000014;
+            background-color: white;
+            border-radius: 50%;
+            padding: 15px ;
+            font-size: 20px;
+           }
+           .heart:hover{
+            background-color: #ffab00;
+        }
+        .bag:hover{
+        background-color: #ffab00;
+        color: white;
+        transition: 0.3s;
+        }
+        .search:hover{
+            transition: 0.3s;
+            color: white;
+            background-color: #ffab00;
+        }
+        }
+        
+
+        
+    }
+    
+    p{
+        font-size: 18px;
+        font-weight: 500;
+        color: #000;
+        line-height: 28px;
+    }
+  .prices{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.product_col:hover{
+    .product_img{
+        img{
+            transform: scale(1.1);
+        }
+        .products_nav{
+            .heart{
+                transform: translateX(0px);
+                visibility: visible;
+                opacity: 1;
+            }
+            .search{
+                transform: translateX(0px);
+                visibility: visible;
+                opacity: 1;
+            }
+            .bag{
+                transform: translateX(0px);
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}
+        }
+    
+}

@@ -1,0 +1,170 @@
+<!-- {
+  "design":[{
+    "productsec":[{
+      "image":"https://topbike-store-demo.myshopify.com/cdn/shop/files/slider2.jpg?v=1613576060",
+      "title":"Products"
+    }],
+    "salesec":[{
+      "image":"https://topbike-store-demo.myshopify.com/cdn/shop/files/Biking-Basics-5-Essential-Bike-Tools-to-Take-with-You-on-a-Cycling-Adventure.jpg?v=1613576668",
+      "title":"A NEW COLLECTION",
+      "subtitle":"SALE UP TO 30%",
+      "btn":"SHOP NOW"
+    }]
+  }],
+  "bicycles": [
+    {
+      "productName": "RELEASE 2",
+      "newprice": "$3,250.00",
+      "images": [
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16_f996b4d3-b7d2-4a6e-9fbd-a430d3143e19.jpg?v=1608082060",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.1.jpg?v=1608082060",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.2.jpg?v=1608082060",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.3.jpg?v=1608082060",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.4.jpg?v=1608082060",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.5.jpg?v=1608082060",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.6.jpg?v=1608082060",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.7.jpg?v=1608082060"
+      ],
+      "about": "The Release turned heads and earned rave reviews from the cycling press when it debuted. We’re proud of that fact, but (at the risk of sounding conceited) we’re not entirely surprised. Our patent-pending Level Link system is the best-pedaling suspension design we’ve ever cooked up. What’s more, the bike’s progressive..."
+    },
+      {
+      "productName": "SYNC'R CARBON 29",
+      "newprice": "$3,500.00",
+      "images": [
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15_e805e1b0-a9ea-4b4a-981c-baf6c09b51b7.jpg?v=1608082102",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.1.jpg?v=1608082102",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.2.jpg?v=1608082102",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.3.jpg?v=1608082102",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.4.jpg?v=1608082102",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.5.jpg?v=1608082102",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.6.jpg?v=1608082102",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.7.jpg?v=1608082102"
+      ],
+      "about": "Easy to pedal up, bomber on the way down, playful the whole ride. See what all the fuss is about with our most progressive hardtail that now comes as a 29er. An all-new monocoque carbon frame design features a tapered headtube and Boost rear spacing for increased stiffness. Burly 29×2.5-inch..."
+    },
+    {
+      "productName": "DiamondBlack Haanjo 7C Carbon",
+      "newprice": "$2,800.00",
+      "oldprice":"$3,000.00",
+      "images": [
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6_6d883936-4e26-4d9a-93b7-63837f78bf88.jpg?v=1608081784",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.1.jpg?v=1608081784",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.2.jpg?v=1608081784",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.3.jpg?v=1608081784",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.4.jpg?v=1608081784",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.5.jpg?v=1608081784",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.6.jpg?v=1608081784",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.7.jpg?v=1608081784"
+      ],
+      "about": "Part road bike, part cyclocross bike, part mountain bike, the Diamondback Haanjo 7C is 100 percent awesome … and ready for any adventure. The full carbon frame and fork are light, tough, and designed around our Endurance Geometry, which puts you in the perfect position to comfortably hammer out long..."
+    },
+    {
+      "productName": "DiamondBlack Haanjo 8C Carbon",
+      "newprice": "$4,400.00",
+      "images": [
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5_d2330394-8374-4080-86f6-d131dafef040.jpg?v=1608081728",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.1.jpg?v=1608081728",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.2.jpg?v=1608081728",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.3.jpg?v=1608081728",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.4.jpg?v=1608081728",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.5.jpg?v=1608081728",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.6.jpg?v=1608081728",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.7.jpg?v=1608081728"
+      ],
+      "about": "DiamondBlack Haanjo 8C Carbon Meet the newest member of the Haanjo family. The Haanjo 8C is our first all carbon adventure bike. Utilizing the fan favorite DB carbon frame with endurance geometry, this bike continues in the Haanjo tradition of rugged comfort, with a relaxed headtube angle and carbon fork...."
+    },
+     {
+      "productName": "DiamondBlack Haanjo 3",
+      "newprice": "$1,100.00",
+      "oldprice":"$1,200.00",
+      "images": [
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4_c8009f9f-cf65-4e2d-82b4-9ab18259b2fe.jpg?v=1608081655",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.1.jpg?v=1608081655",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.2.jpg?v=1608081655",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.3.jpg?v=1608081655",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.4.jpg?v=1608081655",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.5.jpg?v=1608081655",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.6.jpg?v=1608081655",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.7.jpg?v=1608081655"
+      ],
+      "about": "Your next bike shouldn’t limit you — it should open up a world of new possibilities. Enter the Haanjo 3, a bike that can handle any kind of road — paved or not — that calls your name. We equipped the Haanjo 3 with a butted and formed aluminum frame..."
+    },
+    {
+      "productName": "DiamondBlack Haanjo 4",
+      "newprice": "$1,400.00",
+      "oldprice":"$1,500.00",
+      "images": [
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3_088179d9-6d45-424c-9cba-5113d4cfd1ca.jpg?v=1608081612",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.1.jpg?v=1608081612",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.2.jpg?v=1608081612",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.3.jpg?v=1608081612",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.4.jpg?v=1608081612",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.5.jpg?v=1608081612",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.6.jpg?v=1608081612",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.7.jpg?v=1608081612"
+      ],
+      "about": "We’re proud of all our aluminum Haanjo models for their capabilities as road bikes with mountain bike attitude. The Diamondback Haanjo 4, however, ups the ante considerably. We took our aluminum frame and added thru-axles front and rear to give it even more precise handling. Next, we added a carbon..."
+    },
+    {
+      "productName": "DiamondBlack Haanjo 5",
+      "newprice": "$1,800.00",
+      "oldprice":"$1,900.00",
+      "images": [
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2_4cfbe3cb-7764-4ab9-86cb-533420f5f5d1.jpg?v=1608081214",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.1.jpg?v=1608081214",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.2.jpg?v=1608081214",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.3.jpg?v=1608081214",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.4.jpg?v=1608081214",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.5.jpg?v=1608081214",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.6.jpg?v=1608081214",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.7.jpg?v=1608081214"
+      ],
+      "about": "You’re lost. And that’s a good thing because the Diamondback Haanjo 5 is a gravel bike designed to help you get off the beaten track. That’s why we built it around our trustworthy 6061 alloy frame and carbon fork with thru axles front and rear. The path off road is..."
+    },
+    {
+      "productName": "DiamondBlack Haanjo 6C Carbon",
+      "newprice": "$2,400.00",
+      
+      "images": [
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.jpg?v=1608081158",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.1.jpg?v=1608081158",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.2.jpg?v=1608081158",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.3.jpg?v=1608081158",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.4.jpg?v=1608081158",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.5.jpg?v=1608081158",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.6.jpg?v=1608081158",
+        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.7.jpg?v=1608081158"
+      ],
+      "about": "Wait — is this a road bike? A cyclocross rig? A commuter? The answer: Yes. The Haanjo 6C features a lightweight full carbon frame and fork, designed to balance stability and speed on- and off-road. Since the Haanjo 6C is meant to explore, it’s equipped with a SRAM Rival 1 drivetrain and a..."
+    }
+  ],
+  "BikeAccessories":[{
+    
+  }],
+  "Helmet":[{
+    
+  }]
+} -->
+{
+  "logo": "https://topbike-store-demo.myshopify.com/cdn/shop/files/Untitled-2.png?v=1613575289",
+  "links": [
+    { "text": "Home", "url": "/" },
+    { "text": "Shop", "url": "/products","hot":"HOT" },
+    { "text": "Featured", "url": "#" },
+    { "text": "Pages", "url": "#" },
+    { "text": "Blogs", "url": "#" }
+  ],
+   "header": [
+     { "image":"https://topbike-store-demo.myshopify.com/cdn/shop/files/slideshow_4.jpg?v=1613575294","title": "Off Road Bicycle","subtitle": "Here to bring your life style to the next level.","btn":"SHOP NOW"
+       
+     },
+     { "image":"https://topbike-store-demo.myshopify.com/cdn/shop/files/slideshow_3.jpg?v=1613575289","title": "Sport Bicycle","subtitle": "Accompany you to the end of the road","btn":"BUY NOW"
+     }
+   ],
+   "shopify":[{ "image":"https://topbike-store-demo.myshopify.com/cdn/shop/files/free-delivery.png?v=1613577961","title": "FREE SHIPPING","subtitle": "Only order from $230" },{ "image":"https://topbike-store-demo.myshopify.com/cdn/shop/files/return-of-investment.png?v=1613577961","title": "MONEY RETURN","subtitle": "30 days free to return money" },{ "image":"https://topbike-store-demo.myshopify.com/cdn/shop/files/24-hours-support.png?v=1613577961","title": "SUPPORT 24/7","subtitle": "Always ready to support" }],
+   "expiresin":[{ "title":"Only Online","subtitle":"GET 30% OFF YOUR ORDER OF $100 OR MORE","promocode":"USE CODE “TOPBIKE30”","btn":"SHOP NOW","image":"https://topbike-store-demo.myshopify.com/cdn/shop/files/countdown-v1.jpg?v=1613575291"}],
+   "filteredproducts":[{ "image":"https://topbike-store-demo.myshopify.com/cdn/shop/files/collection-bike.jpg?v=1613575695","title":"Bicycle" },{ "image":"https://topbike-store-demo.myshopify.com/cdn/shop/files/collection-accessory.jpg?v=1613575695","title":"Bike Accessories" },{ "image":"https://topbike-store-demo.myshopify.com/cdn/shop/files/collection-helmet.jpg?v=1613575695","title":"Helmet" }],
+   "info":[{"image":"https://topbike-store-demo.myshopify.com/cdn/shop/articles/blog-post3_1024x1024.jpg?v=1607478877","title":"One Week in Bali: A Great Trip for a Lifetime to Choose","subtitle":"Are you planning to have a short trip to Bali? What is best about a short visit to a particular place is...","news":"NEWS","btn":"Readmore","date":["08","DEC"]},{"image":"https://topbike-store-demo.myshopify.com/cdn/shop/articles/blog-post2_1024x1024.jpg?v=1607478478","title":"You Can Save an Average of $544 on Expenses Annually","subtitle":"In the dark, cold winter, it’s easy to stay cooped up and fall out of our exercise routines. However, the longer days...","news":"NEWS","btn":"Readmore","date":["08","DEC"]},{"image":"https://topbike-store-demo.myshopify.com/cdn/shop/articles/blog-post1_1024x1024.jpg?v=1607478360","title":"You Can Save an Average of $544 on Expenses Annually","subtitle":"In the dark, cold winter, it’s easy to stay cooped up and fall out of our exercise routines. However, the longer days...","news":"NEWS","btn":"Readmore","date":["08","DEC"]}],
+   "footer":[{"logopart":[{ "logo":"https://topbike-store-demo.myshopify.com/cdn/shop/files/LOGO.png?v=1613575279","parag":"The simple, delicate and light design makes it comfortable for everyone."}],"nav":[{ "title":"Shop", "navigate":["Shopping","Bicycle","Bicycle Accessory","Helmet"]},{ "title":"Shop", "navigate":["Shopping","Bicycle","Bicycle Accessory","Helmet" ]}}]]
+  
+}

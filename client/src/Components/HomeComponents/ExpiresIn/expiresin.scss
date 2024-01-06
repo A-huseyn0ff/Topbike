@@ -1,0 +1,51 @@
+.expiresin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 100px;
+    overflow: hidden;
+    height: 700px;
+    img{
+        width: 100%;
+    }
+    .expire_txt{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        left: 250px;
+        a{
+            margin-top: 50px;
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            padding: 15px 40px;
+            transition: 0.3s;
+        }
+        a:hover{
+background-color: #ff0000;
+        }
+        .expire{
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    gap: 10px ;
+    background-color: white;
+    opacity: 0.7;
+    height: 130px;
+}
+        }
+    }
+}

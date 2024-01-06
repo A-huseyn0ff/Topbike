@@ -1,0 +1,104 @@
+nav{
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 99;
+    height: 100px;
+    width: 100%;
+    background-color: transparent;
+    .nav_container{
+        width: 90%;
+        
+       
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+       
+        img{
+            width: 125px;
+            height: 31px;
+        }
+    }
+    ul{
+        
+        display: flex;
+        list-style-type: none;
+        gap: 30px;
+        li{
+            position: relative;
+           a{
+            font-size: 24px;
+            font-weight: 700;
+            font-family: 'Sofia Sans', sans-serif;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+           
+           }
+           span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: -15px;
+            
+            
+            bottom: 30px;
+            svg{
+                font-size: 24px;
+            }
+            p{
+                color: white;
+                position: absolute;
+                font-size: 10px;
+                bottom: 9.5px;
+            }
+          
+        }
+           a:hover{
+
+            color: #ffab00;
+           }
+        }
+       
+            
+        
+    }
+    .icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        svg{
+            color: white;
+           font-size: 24px;
+          
+        }
+    }
+    }
+}
+.scrolled {
+    transition: 0.3s;
+    background-color: black;
+    opacity: 0.8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeDown 0.6s ease-in-out;
+  }
+  
+  @keyframes fadeDown {
+    from {
+        
+      transform: translateY(-100%);
+    }
+    to {
+       
+      transform: translateY(0);
+    }
+  }
