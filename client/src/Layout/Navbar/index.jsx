@@ -7,14 +7,27 @@ import { FaRegHeart } from "react-icons/fa";
 import { SlBag } from "react-icons/sl";
 import { IoClose } from "react-icons/io5"; 
 import { FaRegTrashAlt } from "react-icons/fa";
+import { basketDecrement, basketDelete, basketDeleteAll, basketIncrement } from '../../Components/Basket/BasketSlice.jsx';
 import { useDispatch, useSelector } from "react-redux";
 import { wihlistDelete } from '../../Components/Wishlist/wishlistSlice';
 const Navbar = () => {
   const [navData, setNavData] = useState([]);
   const [scrollDown, setScrollDown] = useState(false);
   const [isWishlistOpen, setIsWishlistOpen] = useState(false); 
+  const [isBasketOpen, setIsBasketOpen] = useState(false);
   const WishlistArr = useSelector((state) => state.wishlist.value)
+  const basketArr = useSelector((state) => state.basket.value)
   const dispatch = useDispatch()
+  
+
+  let subTotal = 0;
+
+  basketArr.forEach((item) => {
+    subTotal += parseFloat(item.newprice.replace(/[^0-9.-]+/g, '')) * item.count;
+  });
+  
+  const formattedSubTotal = `$${subTotal.toFixed(2)}`;
+
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     setScrollDown(scrollPosition > 100);
@@ -45,7 +58,9 @@ const Navbar = () => {
   const toggleWishlist = () => {
     setIsWishlistOpen(!isWishlistOpen);
   };
-
+  const toggleBasket = () => {
+    setIsBasketOpen(!isBasketOpen);
+  };
   return (
     <>
       {navData.map((item, index) => (
@@ -89,8 +104,8 @@ const Navbar = () => {
                 <FaRegUser />
                 {WishlistArr.length > 0 && <span className="wishlistnew"></span>}
                 <FaRegHeart onClick={toggleWishlist} style={{cursor:'pointer'}} /> 
-                <SlBag />
-                {/* <span className="basketnew"></span> */}
+                <SlBag onClick={toggleBasket} style={{cursor:'pointer'}}/>
+                {basketArr.length > 0 && <span className="basketnew"></span>}
               </div>
             </div>
           </nav>
@@ -135,6 +150,66 @@ const Navbar = () => {
             </div>
             </>
           )}
+          {isBasketOpen && (
+            <>
+            <div className="wishlist">
+            </div>
+            <div className="wishlist_container" >
+              <div className="wishlist_top">
+                <IoClose className="close" onClick={toggleBasket} /> 
+                <h2>My Basket</h2>
+                <span>{basketArr.length}</span>
+              </div>
+              <div className="wishlist_middle">
+              {
+                        basketArr && basketArr.map((item)=>(
+                          <>
+                            <div className='wishlistCard'>
+                                <div className='cardImage'>
+                                    <img src={item.images[0]} alt="" />
+                                </div>
+                                <div className='cardText'>
+                                    <h3>{item.productName}</h3>
+                                    <h3>QRT:{item.count}</h3>
+                                    <p className='price'>{item.newprice} </p>
+                                </div>
+                                
+                                        
+                                       <div className="cardBtns">
+                                       <div className="counter">
+                  <button onClick={() => dispatch(basketIncrement(item))}>+</button>
+                  <span>{item.count}</span>
+                  <button onClick={() => dispatch(basketDecrement(item))} >
+                    -
+                  </button>
+                  </div>
+                                       <FaRegTrashAlt onClick={()=>dispatch(basketDelete(item))} style={{cursor:'pointer'}}>
+                                      
+                                        </FaRegTrashAlt>
+                                       </div>
+                                   
+                                
+                               
+                            </div> 
+                           
+                            </>
+                        ))
+                       
+                    }
+            
+              </div>
+              <div className="Total">
+        <h2>Total:</h2>
+        <span>{formattedSubTotal}</span>
+      </div>
+              <div className="wishlistbottom">
+                        <button className="viewcart">VIEW CART</button>
+                        <button onClick={() => dispatch(basketDeleteAll())} className="deleteall">DELETE ALL</button>
+                      </div>
+            </div>
+            </>
+          )}
+       
         </>
       ))}
     </>
