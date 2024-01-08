@@ -244,14 +244,7 @@ grid-row-gap: 50px;
             font-size: 20px;
             cursor: pointer;
            }
-           .active{
-            color: white;
-            
-            background-color: #ffab00;
-            svg{
-                fill: white !important;
-            }
-           }
+           
            .bag{
             transition: 0.9s;
             visibility: hidden;
@@ -267,6 +260,12 @@ grid-row-gap: 50px;
             padding: 15px ;
             font-size: 20px;
             cursor: pointer;
+           }
+           .active{
+            color: white;
+            
+            background-color: #ffab00;
+            
            }
            .search{
             transition: 1.2s;

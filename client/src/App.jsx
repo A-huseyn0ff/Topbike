@@ -3,6 +3,7 @@ import MainLayout from "./MainLayout"
 import Home from "./Pages/Home"
 import './App.scss'
 import Shop from "./Pages/Shop"
+import Details from "./Components/Details"
 function App() {
   
 
@@ -13,6 +14,8 @@ function App() {
         <Route path='/' element={<MainLayout />}>
           <Route index element={<Home />} />
           <Route path="/products" element={<Shop />} />
+          
+          <Route path="/details/:id" element={<Details />} />
         </Route>
       </Routes>
     </BrowserRouter>

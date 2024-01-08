@@ -147,14 +147,16 @@ nav{
   .wishlist_container{
     height: 100%;
     width: 380px;
-    background-color: white;
+    background-color: #f7f7f7;
     position: fixed;
     z-index: 110;
     opacity: 1 !important;
     right: 0;
     overflow-y: auto;
     .wishlist_top{
-        position: relative;
+        position: fixed;
+        width: 380px;
+    background-color:#f7f7f7;
         top: 0;
         height: 45px;
         display: flex;
@@ -215,7 +217,10 @@ nav{
 align-items: center;
 justify-content: center;
 flex-direction: column;
-
+overflow-y: auto;
+position: absolute;
+    top: 45px;
+    max-height: 100%;
 .wishlistCard{
     gap: 20px;
     padding-top: 10px;
@@ -265,20 +270,54 @@ flex-direction: column;
             justify-content: center;
             flex-direction: column;
             gap: 10px;
+            button{
+                width: 29px;
+                height: 29px;
+                cursor: pointer;
+                border-radius: 50%;
+                background-color: #000;
+                color: white;
+            }
         }
     }
 }
+    }
+    .Total{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 59px;
+    line-height: 59px;
+    background-color: #fff;
+    color: #000;
+    padding: 0 40px;
+    overflow: hidden;
+    bottom: 59px;
+    position: fixed;
+    width: 400px;
+    max-width: 100%;
+        span{
+            width: auto;
+            font-weight: 600;
+            display: block;
+            color: #ffab00;
+        }
+        h2{
+            font-size: 18px;
+    font-weight: 500;
+        }
     }
     .wishlistbottom{
         display: flex;
         align-items: center;
         justify-content: center;
-       position: absolute;
+       position: fixed;
        overflow: hidden;
-       top: 945px;
-       width: 100%;
+    
+    bottom: 0;
+       width: 380px;
        .deleteall{
-        width: 50%;
+        width: 190px;
         height: 59px;
         background-color: black;
         font-weight: 600;
@@ -295,7 +334,7 @@ flex-direction: column;
         background-color: #ffab00;
        }
        .viewcart{
-        width: 50%;
+        width: 190px;
         height: 59px;
         background-color: #2a2a2a;
         font-weight: 600;

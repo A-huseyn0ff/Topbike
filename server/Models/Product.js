@@ -17,7 +17,7 @@ const ProductSchema = new mongoose.Schema(
       allproducts:[{
         
           categoryName:{type:String},
-          products:[{
+          productlar:[{
             productName: { type: String, required: true },
              images:[{type:String}],
               oldprice:{type:String},
@@ -27,33 +27,6 @@ const ProductSchema = new mongoose.Schema(
           }]
         
       }]
-      //   bicycles:[{
-      //     productName: { type: String, required: true },
-      //  images:[{type:String}],
-      //   oldprice:{type:String},
-      //   about:{type:String},
-      //   discountRate:{type:String},
-      //   newprice:{type:String,required:true},
-      //   category:[{type:String}]
-      //   }],
-      //   BikeAccessories:[{
-      //     productName: { type: String, required: true },
-      //  images:[{type:String}],
-      //   oldprice:{type:String},
-      //   about:{type:String},
-      //   discountRate:{type:String},
-      //   newprice:{type:String,required:true},
-      //   category:[{type:String}]
-      //   }],
-      //   Helmet:[{
-      //     productName: { type: String, required: true },
-      //  images:[{type:String}],
-      //   oldprice:{type:String},
-      //   about:{type:String},
-      //   discountRate:{type:String},
-      //   newprice:{type:String,required:true},
-      //   category:[{type:String}]
-      //   }]
       },
       { timestamps: true }
 );

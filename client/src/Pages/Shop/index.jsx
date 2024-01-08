@@ -8,6 +8,7 @@ import { FiSearch } from "react-icons/fi";
 import { CiFilter } from "react-icons/ci";
 import grider from "../../Assets/Screenshot 2024-01-06 044811.png";
 import { useSelector, useDispatch } from 'react-redux';
+import { basketAdd, basketDelete } from '../../Components/Basket/BasketSlice';
 import { wihlsitAdd, wihlistDelete } from '../../Components/Wishlist/wishlistSlice';
 const Shop = () => {
   const [shop, setShop] = useState([]);
@@ -15,6 +16,7 @@ const Shop = () => {
   const [current, setCurrent] = useState(1);
   const [pagePerData] = useState(12);
   const wishlistItems = useSelector((state) => state.wishlist.value);
+  const basketItems = useSelector((state) => state.basket.value);
   const dispatch = useDispatch();
   const pagenum = [];
   for (let i = 1; i <= Math.ceil(shop.length / pagePerData); i++) {
@@ -49,7 +51,9 @@ const Shop = () => {
   const isProductInWishlist = (productId) => {
     return wishlistItems.some((item) => item._id === productId);
   };
-
+  const isProductInBasket = (productId) => {
+    return basketItems.some((item) => item._id === productId);
+  };
   const handleWishlistToggle = (product) => {
     if (isProductInWishlist(product._id)) {
     
@@ -57,6 +61,13 @@ const Shop = () => {
     } else {
       
       dispatch(wihlsitAdd(product));
+    }
+  };
+  const handleBasketToggle = (product) => {
+    if (isProductInBasket(product._id)) {
+      dispatch(basketDelete(product));
+    } else {
+      dispatch(basketAdd(product));
     }
   };
   return (
@@ -127,7 +138,7 @@ const Shop = () => {
               style={{ gridTemplateColumns: `repeat(${grid}, 1fr)` }}
             >
               {item.allproducts.map((pro) =>
-                pro.products.map((datas, dataIndex) => (
+                pro.productlar.map((datas, dataIndex) => (
                   <div className="product_col" key={dataIndex}>
                     <div className="product_img">
                       <img src={datas.images[0]} alt="" />
@@ -137,12 +148,15 @@ const Shop = () => {
                             className={`heart ${isProductInWishlist(datas._id) ? 'active' : ''}`}>
                           <FaRegHeart />
                         </a>
-                        <a  className="bag">
-                          <SlBag />
-                        </a>
-                        <a  className="search">
-                          <FiSearch />
-                        </a>
+                        <a
+                            onClick={() => handleBasketToggle(datas)}
+                            className={`bag ${isProductInBasket(datas._id) ? 'active' : ''}`}
+                          >
+                            <SlBag />
+                          </a>
+                          <Link to={`/details/${datas._id}`} className="search">
+                            <FiSearch />
+                          </Link>
                       </div>
                     </div>
                     <p>{datas.productName}</p>
