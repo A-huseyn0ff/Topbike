@@ -1,0 +1,91 @@
+.ProductDetails{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .ProductDetails_container{
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .productDetails_img{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            .main_img{
+                width: 540px;
+                height: 540px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .myDetails{
+                width: 100%;
+
+               .selected_img{
+                width: 78px !important;
+                height: 78px !important;
+                img{
+                    
+                    height: 100%;
+                    width: 100%;
+                }
+               }
+                    
+                
+            }
+        }
+        .productDetails_info{
+            display: flex;
+        width: 507px;
+            flex-direction: column;
+            h2{
+                font-size: 24px;
+                font-weight: 400;
+                color: #000;
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                text-transform: capitalize;
+            }
+            .prices{
+                gap: 5px;
+                display: flex;
+                align-items: center;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #f3f3f3;
+                h1{
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+                del{
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #83868c;
+                }
+            }
+            .title{
+                display: flex;
+                align-items: center;
+                gap: 50px;
+                a{
+                    font-size: 14px;
+                border-radius: 50%;
+                border:1px solid #f3f3f3;
+                width: 40px;
+                height: 38px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                }
+            }
+            p{
+                padding-top: 20px;
+            }
+        }
+    }
+}

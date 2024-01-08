@@ -37,29 +37,29 @@ export const getProductlarById = async (req, res) => {
   const productId = req.params.id;
 
   try {
-    const Productdata = await ProductSchema.findOne({ 'allproducts.productlar._id': productId });
+    const productDetails = await ProductSchema.findOne({ 'allproducts.productlar._id': productId });
 
-    if (!Productdata) {
+    if (!productDetails) {
       return res.status(404).json({ message: 'Product not found' });
     }
 
-    
-    let productlarArray;
-    Productdata.allproducts.forEach((category) => {
-      const product = category.productlar.find((item) => item._id == productId);
-      if (product) {
-        productlarArray = category.productlar;
+    let product;
+    productDetails.allproducts.forEach((category) => {
+      const foundProduct = category.productlar.find((p) => p._id.toString() === productId);
+      if (foundProduct) {
+        product = foundProduct;
       }
     });
 
-    if (!productlarArray) {
+    if (!product) {
       return res.status(404).json({ message: 'Product not found' });
     }
 
-    res.json(productlarArray);
+    res.json(product);
   } catch (error) {
-    console.error('Error fetching productlar array:', error);
+    console.error('Error fetching product details:', error);
     res.status(500).json({ message: 'Internal Server Error' });
   }
-};
+}
+
 
