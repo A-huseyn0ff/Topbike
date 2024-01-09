@@ -115,6 +115,9 @@ nav{
     }
     }
 }
+.navactive{
+    background-color: black;
+}
 .scrolled {
     transition: 0.3s;
     background-color: black;
@@ -227,7 +230,7 @@ position: absolute;
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    width: 100%;
+    width: 380px;
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -19,7 +19,7 @@ const ExpiresIn = () => {
   }, []);
 
   const calculateTimeLeft = () => {
-    const expirationDate = new Date("January 12, 2024 00:00:00").getTime();
+    const expirationDate = new Date("January 19, 2024 00:00:00").getTime();
     const difference = expirationDate - new Date().getTime();
     let timeLeft = {};
   

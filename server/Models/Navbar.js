@@ -16,7 +16,21 @@ const NavbarSchema = new mongoose.Schema(
           },
           hot:{
             type:String
-          }
+          },
+          dropdown:[{
+            title:{
+              type:String
+            },
+            list:[{
+              hot:{type:String},
+              navtitle:{type:String},
+              url:{type:String},
+              new:{type:String}
+            }],
+            img:{
+              type:String
+            }
+          }]
         },
       ],
     header: [{

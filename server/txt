@@ -1,484 +1,591 @@
-// {
-  "design": [{
-   "productsec": [
-     {
-       "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/slider2.jpg?v=1613576060",
-       "title": "Products"
-     }
-   ],
-   "salesec": [
-     {
-       "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/Biking-Basics-5-Essential-Bike-Tools-to-Take-with-You-on-a-Cycling-Adventure.jpg?v=1613576668",
-       "title": "A NEW COLLECTION",
-       "subtitle": "SALE UP TO 30%",
-       "btn": "SHOP NOW"
-     }
-   ]
- }],
-//  "allproducts":[{
-// "categoryName":"Bicycle",
-// "products": [
-  
-//    {
-//      "productName": "RELEASE 2",
-//      "newprice": "$3,250.00",
-//      "images": [
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16_f996b4d3-b7d2-4a6e-9fbd-a430d3143e19.jpg?v=1608082060",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.1.jpg?v=1608082060",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.2.jpg?v=1608082060",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.3.jpg?v=1608082060",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.4.jpg?v=1608082060",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.5.jpg?v=1608082060",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.6.jpg?v=1608082060",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.7.jpg?v=1608082060"
-//      ],
-//      "about": "The Release turned heads and earned rave reviews from the cycling press when it debuted. We’re proud of that fact, but (at the risk of sounding conceited) we’re not entirely surprised. Our patent-pending Level Link system is the best-pedaling suspension design we’ve ever cooked up. What’s more, the bike’s progressive..."
-//    },
-//      {
-//      "productName": "SYNC'R CARBON 29",
-//      "newprice": "$3,500.00",
-//      "images": [
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15_e805e1b0-a9ea-4b4a-981c-baf6c09b51b7.jpg?v=1608082102",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.1.jpg?v=1608082102",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.2.jpg?v=1608082102",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.3.jpg?v=1608082102",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.4.jpg?v=1608082102",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.5.jpg?v=1608082102",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.6.jpg?v=1608082102",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.7.jpg?v=1608082102"
-//      ],
-//      "about": "Easy to pedal up, bomber on the way down, playful the whole ride. See what all the fuss is about with our most progressive hardtail that now comes as a 29er. An all-new monocoque carbon frame design features a tapered headtube and Boost rear spacing for increased stiffness. Burly 29×2.5-inch..."
-//    },
-//    {
-//      "productName": "DiamondBlack Haanjo 7C Carbon",
-//      "newprice": "$2,800.00",
-//      "oldprice":"$3,000.00",
-//      "images": [
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6_6d883936-4e26-4d9a-93b7-63837f78bf88.jpg?v=1608081784",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.1.jpg?v=1608081784",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.2.jpg?v=1608081784",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.3.jpg?v=1608081784",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.4.jpg?v=1608081784",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.5.jpg?v=1608081784",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.6.jpg?v=1608081784",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.7.jpg?v=1608081784"
-//      ],
-//      "about": "Part road bike, part cyclocross bike, part mountain bike, the Diamondback Haanjo 7C is 100 percent awesome … and ready for any adventure. The full carbon frame and fork are light, tough, and designed around our Endurance Geometry, which puts you in the perfect position to comfortably hammer out long..."
-//    },
-//    {
-//      "productName": "DiamondBlack Haanjo 8C Carbon",
-//      "newprice": "$4,400.00",
-//      "images": [
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5_d2330394-8374-4080-86f6-d131dafef040.jpg?v=1608081728",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.1.jpg?v=1608081728",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.2.jpg?v=1608081728",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.3.jpg?v=1608081728",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.4.jpg?v=1608081728",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.5.jpg?v=1608081728",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.6.jpg?v=1608081728",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.7.jpg?v=1608081728"
-//      ],
-//      "about": "DiamondBlack Haanjo 8C Carbon Meet the newest member of the Haanjo family. The Haanjo 8C is our first all carbon adventure bike. Utilizing the fan favorite DB carbon frame with endurance geometry, this bike continues in the Haanjo tradition of rugged comfort, with a relaxed headtube angle and carbon fork...."
-//    },
-//     {
-//      "productName": "DiamondBlack Haanjo 3",
-//      "newprice": "$1,100.00",
-//      "oldprice":"$1,200.00",
-//      "images": [
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4_c8009f9f-cf65-4e2d-82b4-9ab18259b2fe.jpg?v=1608081655",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.1.jpg?v=1608081655",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.2.jpg?v=1608081655",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.3.jpg?v=1608081655",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.4.jpg?v=1608081655",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.5.jpg?v=1608081655",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.6.jpg?v=1608081655",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.7.jpg?v=1608081655"
-//      ],
-//      "about": "Your next bike shouldn’t limit you — it should open up a world of new possibilities. Enter the Haanjo 3, a bike that can handle any kind of road — paved or not — that calls your name. We equipped the Haanjo 3 with a butted and formed aluminum frame..."
-//    },
-//    {
-//      "productName": "DiamondBlack Haanjo 4",
-//      "newprice": "$1,400.00",
-//      "oldprice":"$1,500.00",
-//      "images": [
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3_088179d9-6d45-424c-9cba-5113d4cfd1ca.jpg?v=1608081612",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.1.jpg?v=1608081612",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.2.jpg?v=1608081612",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.3.jpg?v=1608081612",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.4.jpg?v=1608081612",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.5.jpg?v=1608081612",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.6.jpg?v=1608081612",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.7.jpg?v=1608081612"
-//      ],
-//      "about": "We’re proud of all our aluminum Haanjo models for their capabilities as road bikes with mountain bike attitude. The Diamondback Haanjo 4, however, ups the ante considerably. We took our aluminum frame and added thru-axles front and rear to give it even more precise handling. Next, we added a carbon..."
-//    },
-//    {
-//      "productName": "DiamondBlack Haanjo 5",
-//      "newprice": "$1,800.00",
-//      "oldprice":"$1,900.00",
-//      "images": [
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2_4cfbe3cb-7764-4ab9-86cb-533420f5f5d1.jpg?v=1608081214",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.1.jpg?v=1608081214",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.2.jpg?v=1608081214",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.3.jpg?v=1608081214",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.4.jpg?v=1608081214",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.5.jpg?v=1608081214",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.6.jpg?v=1608081214",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.7.jpg?v=1608081214"
-//      ],
-//      "about": "You’re lost. And that’s a good thing because the Diamondback Haanjo 5 is a gravel bike designed to help you get off the beaten track. That’s why we built it around our trustworthy 6061 alloy frame and carbon fork with thru axles front and rear. The path off road is..."
-//    },
-//    {
-//      "productName": "DiamondBlack Haanjo 6C Carbon",
-//      "newprice": "$2,400.00",
-     
-//      "images": [
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.jpg?v=1608081158",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.1.jpg?v=1608081158",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.2.jpg?v=1608081158",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.3.jpg?v=1608081158",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.4.jpg?v=1608081158",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.5.jpg?v=1608081158",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.6.jpg?v=1608081158",
-//        "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.7.jpg?v=1608081158"
-//      ],
-//      "about": "Wait — is this a road bike? A cyclocross rig? A commuter? The answer: Yes. The Haanjo 6C features a lightweight full carbon frame and fork, designed to balance stability and speed on- and off-road. Since the Haanjo 6C is meant to explore, it’s equipped with a SRAM Rival 1 drivetrain and a..."
-//    }
-//   }
-//   ]
- //--------------------------------
- //Bike accessories
- {
-   "productName":"BIKES MTB 27.5 - MAXXLITE - AIR - REMOTE - WINNER","newprice":"$100.00","about":"BOLANY FA02- Magnesium alloy: 1.65kg - Air forks - Lock Manual - Stroke: 110mm - Metallic decal","images":[
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.1.jpg?v=1607324115",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.2.jpg?v=1607324116",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.3.jpg?v=1607324116",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.4.jpg?v=1607324116",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.5.jpg?v=1607324116",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.6.jpg?v=1607324116",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.7.jpg?v=1607324116",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.8.jpg?v=1607324116"
-     
-   ]
-   
- },{
-   "productName":"BlueSunshine Brake Kit","newprice":"$56.00","oldprice":"$60.00","about":"Used for brake systems of ordinary bikes, mountain bikes and road bikes. Rotor diameter: 160 mm; Freewheel Threaded Hubs, Hole distance of 48mm, an inner diameter of 34mm(approx). Position: Front / Rear. F-160mm/R-140mm. F-180mm/R-160mm. ROTOR MOUNTING BOLTS are included. Note: F160 Front Brake: (Also named F160/R140) If installed at front...","images":[
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/product11.jpg?v=1608083590",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/11.1.jpg?v=1608083590",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/11.2.jpg?v=1608083590"
-   ]
-   
- },
- {
-   "productName":"ICAN 50mm Carbon Road Bike Wheels","newprice":"$550.00","about":"ICAN 50mm depth 23mm wide carbon rim , fit for 700x23c and 700x25c tire,best all around rim with a balance of lightweight climbing ability, aerodynamic advantage and very good crosswind stability. ICAN standard hub 6 pawls hub - 48 point of engagement with aero sapim cx-ray spoke. Weight:1460+-20g (640+-10g /...","images":[
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/product10.jpg?v=1608083041",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/10.1.jpg?v=1608083041"
-     
-   ]
-   
- },
- {
-   "productName":"Juin Tech M1 Brake Kit","newprice":"$96.00","oldprice":"$100.00","about":"HYBRID BRAKE AND EASY TO INSTALL AND FIX-The Juin Tech M1 isn't a straightforward mechanical disc brake though, it's a hybrid or cable-operated hydraulic.This means you can use them with just about any standard MTB or road-style integrated shifters - SRAM, Shimano or Campagnolo - even ones designed for use...","images":[
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/product12.jpg?v=1608083674",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/12.1.jpg?v=1608083674",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/12.3.jpg?v=1608083674"
-     
-   ]
-   
- },
- {
-   "productName":"SunRise Bike Full Carbon Fiber Road Rims","newprice":"$1200.00","about":"Material: Carbon Fiber-Toray T700 Test: All pass EN quality standard test Rim Finish: 3k Glossy Weight: 1540g±30g/pair excluding skewers Customized: Yes","images":[
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/product9.jpg?v=1608083009",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/9.1.jpg?v=1608083009",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/9.2.jpg?v=1608083009"
-     
-   ]
-   
- },
- {
-   "productName":"Juin Tech M1 Brake Kit","newprice":"$96.00","oldprice":"$100.00","about":"HYBRID BRAKE AND EASY TO INSTALL AND FIX-The Juin Tech M1 isn't a straightforward mechanical disc brake though, it's a hybrid or cable-operated hydraulic.This means you can use them with just about any standard MTB or road-style integrated shifters - SRAM, Shimano or Campagnolo - even ones designed for use...","images":[
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/product12.jpg?v=1608083674",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/12.1.jpg?v=1608083674",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/12.3.jpg?v=1608083674"
-     
-   ]
-   
- },
- {
-   "productName":"Suntour Epixon Epicon XC Air Fork","newprice":"$235.00","about":"Brand: SUNTOUR SunTour or SR Suntour is a manufacturer of bicycle components. It was Japanese-owned and managed, based in Osaka, until the mid-1990s when its name was sold to a Taiwan conglomerate. Its products ranged from suspension forks to derailleurs. Travel: 100mm/120mm Steerer: straight 1 1/8 Weight: 1880g for 27.5...","images":[
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/7.jpg?v=1607317014",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/7.3.jpg?v=1607317014",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/7.6.jpg?v=1607317014"
-     
-   ]
- },
- //---------------------
- //helmet
- {
-   "productName":"HOCALISS Ultralight Bike Helmets.","newprice":"$56.00","about":"Complies with CPSC and EN1078 Certified to Safety standard . PC shell and EPS core for additional protection. Adjustable Fits head sizes (S/M 54-58cm) and (L/XL 58-62cm), Easily adjusts size for snugger fit. Cool & Comfortable lightweight and 23 vents holes. The soft straps are adjustable.This helmet is a comfortable...","images":[
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/product14.jpg?v=1608083545",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/14.1.jpg?v=1608083545",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/14.2.jpg?v=1608083545",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/14.3.jpg?v=1608083545",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/14.4.jpg?v=1608083545"
-   ]
- },
- {
-   "productName":"Schwinn Thrasher Bike Helmet.","newprice":"$120.00","about":"This schwinn thrasher lightweight helmet is designed for adults; suggested age range: 14 years old and up; suggested head circumference: 22.88 to 24.5 inchesSchwinn 360° comfort pairs a dial adjustable fit system with full range padding for the perfect customized, comfortable fitLightweight, three piece microshell enhances durability without weighing you...","images":[
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/product13.jpg?v=1608083493",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/13.1.jpg?v=1608083493",
-     "https://topbike-store-demo.myshopify.com/cdn/shop/products/13.2.jpg?v=1608083493"
-   ]
- }
- //-------
-
- },{},{}]
- 
-}
-
-// {
-//   "logo": "https://topbike-store-demo.myshopify.com/cdn/shop/files/Untitled-2.png?v=1613575289",
-//   "links": [
-//     { "text": "Home", "url": "/" },
-//     { "text": "Shop", "url": "/products","hot":"HOT" },
-//     { "text": "Featured", "url": "#" },
-//     { "text": "Pages", "url": "#" },
-//     { "text": "Blogs", "url": "#" }
-//   ],
-//    "header": [
-//      { "image":"https://topbike-store-demo.myshopify.com/cdn/shop/files/slideshow_4.jpg?v=1613575294","title": "Off Road Bicycle","subtitle": "Here to bring your life style to the next level.","btn":"SHOP NOW"
-       
-//      },
-//      { "image":"https://topbike-store-demo.myshopify.com/cdn/shop/files/slideshow_3.jpg?v=1613575289","title": "Sport Bicycle","subtitle": "Accompany you to the end of the road","btn":"BUY NOW"
-//      }
-//    ],
-//    "shopify":[{ "image":"https://topbike-store-demo.myshopify.com/cdn/shop/files/free-delivery.png?v=1613577961","title": "FREE SHIPPING","subtitle": "Only order from $230" },{ "image":"https://topbike-store-demo.myshopify.com/cdn/shop/files/return-of-investment.png?v=1613577961","title": "MONEY RETURN","subtitle": "30 days free to return money" },{ "image":"https://topbike-store-demo.myshopify.com/cdn/shop/files/24-hours-support.png?v=1613577961","title": "SUPPORT 24/7","subtitle": "Always ready to support" }],
-//    "expiresin":[{ "title":"Only Online","subtitle":"GET 30% OFF YOUR ORDER OF $100 OR MORE","promocode":"USE CODE “TOPBIKE30”","btn":"SHOP NOW","image":"https://topbike-store-demo.myshopify.com/cdn/shop/files/countdown-v1.jpg?v=1613575291"}],
-//    "filteredproducts":[{ "image":"https://topbike-store-demo.myshopify.com/cdn/shop/files/collection-bike.jpg?v=1613575695","title":"Bicycle" },{ "image":"https://topbike-store-demo.myshopify.com/cdn/shop/files/collection-accessory.jpg?v=1613575695","title":"Bike Accessories" },{ "image":"https://topbike-store-demo.myshopify.com/cdn/shop/files/collection-helmet.jpg?v=1613575695","title":"Helmet" }],
-//    "info":[{"image":"https://topbike-store-demo.myshopify.com/cdn/shop/articles/blog-post3_1024x1024.jpg?v=1607478877","title":"One Week in Bali: A Great Trip for a Lifetime to Choose","subtitle":"Are you planning to have a short trip to Bali? What is best about a short visit to a particular place is...","news":"NEWS","btn":"Readmore","date":["08","DEC"]},{"image":"https://topbike-store-demo.myshopify.com/cdn/shop/articles/blog-post2_1024x1024.jpg?v=1607478478","title":"You Can Save an Average of $544 on Expenses Annually","subtitle":"In the dark, cold winter, it’s easy to stay cooped up and fall out of our exercise routines. However, the longer days...","news":"NEWS","btn":"Readmore","date":["08","DEC"]},{"image":"https://topbike-store-demo.myshopify.com/cdn/shop/articles/blog-post1_1024x1024.jpg?v=1607478360","title":"You Can Save an Average of $544 on Expenses Annually","subtitle":"In the dark, cold winter, it’s easy to stay cooped up and fall out of our exercise routines. However, the longer days...","news":"NEWS","btn":"Readmore","date":["08","DEC"]}],
-//    "footer":[{"logopart":[{ "logo":"https://topbike-store-demo.myshopify.com/cdn/shop/files/LOGO.png?v=1613575279","parag":"The simple, delicate and light design makes it comfortable for everyone."}],"nav":[{ "title":"Shop", "navigate":["Shopping","Bicycle","Bicycle Accessory","Helmet"]},{ "title":"Shop", "navigate":["Shopping","Bicycle","Bicycle Accessory","Helmet" ]}}]]
-  
-// }
-{
-  "allproducts": [
+[
     {
-      "categoryName": "Bicycle",
-      "products": [
+      "logo": "https://topbike-store-demo.myshopify.com/cdn/shop/files/Untitled-2.png?v=1613575289",
+      "links": [
         {
-          "productName": "RELEASE 2",
-          "newprice": "$3,250.00",
-          "images": [
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16_f996b4d3-b7d2-4a6e-9fbd-a430d3143e19.jpg?v=1608082060",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.1.jpg?v=1608082060",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.2.jpg?v=1608082060",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.3.jpg?v=1608082060",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.4.jpg?v=1608082060",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.5.jpg?v=1608082060",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.6.jpg?v=1608082060",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.7.jpg?v=1608082060"
-          ],
-          "about": "The Release turned heads and earned rave reviews from the cycling press when it debuted. We’re proud of that fact, but (at the risk of sounding conceited) we’re not entirely surprised. Our patent-pending Level Link system is the best-pedaling suspension design we’ve ever cooked up. What’s more, the bike’s progressive..."
+          "text": "Home",
+          "url": "/",
+          "dropdown": [
+            {
+              "title":"Home 1",
+              "img":"https://topbike-store-demo.myshopify.com/cdn/shop/files/home1_79702614-1d24-4067-9a69-2ee018b89d3b.jpg?v=1613577776"
+            },
+            {
+              "title":"Home 2",
+              "img":"https://topbike-store-demo.myshopify.com/cdn/shop/files/home2_411f599e-59e9-4ba9-8de2-3d92ad6282c6.jpg?v=1613577776"
+            },
+            {
+              "title":"Home 3",
+              "img":"https://topbike-store-demo.myshopify.com/cdn/shop/files/home3_8ef816a2-0531-4578-a497-139164f99d10.jpg?v=1613577776"
+            },
+            {
+              "title":"Home 4",
+              "img":"https://topbike-store-demo.myshopify.com/cdn/shop/files/home4_3c5e0131-1366-4c93-a41b-9f35d04f4449.jpg?v=1613577776"
+            },
+            {
+              "title":"Home 5",
+              "img":"https://topbike-store-demo.myshopify.com/cdn/shop/files/home5_6e4f660a-7d2a-4559-869e-761708fefc9a.jpg?v=1613577776"
+            }
+            
+            ]
         },
         {
-          "productName": "SYNC'R CARBON 29",
-          "newprice": "$3,500.00",
-          "images": [
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15_e805e1b0-a9ea-4b4a-981c-baf6c09b51b7.jpg?v=1608082102",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.1.jpg?v=1608082102",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.2.jpg?v=1608082102",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.3.jpg?v=1608082102",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.4.jpg?v=1608082102",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.5.jpg?v=1608082102",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.6.jpg?v=1608082102",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.7.jpg?v=1608082102"
-          ],
-          "about": "Easy to pedal up, bomber on the way down, playful the whole ride. See what all the fuss is about with our most progressive hardtail that now comes as a 29er. An all-new monocoque carbon frame design features a tapered headtube and Boost rear spacing for increased stiffness. Burly 29×2.5-inch..."
+          "text": "Shop",
+          "url": "/products",
+          "hot": "HOT",
+          "dropdown": [
+            {
+              "title":"Shop Layout",
+              "list":[{
+                "navtitle":"Pagination"
+              },
+              {
+                "navtitle":"Ajax Loading",
+                "hot":"HOT"
+              },
+              {
+                "navtitle":"List View"
+              },
+              {
+                "navtitle":"Background Modern"
+              },
+              {
+                "navtitle":"Fullwidth Layout"
+              },
+              {
+                "navtitle":"Sidebar Layout"
+              }
+              ]
+            },
+            {
+              "title":"Shop Heading",
+              "list":[{
+                "navtitle":"Small Heading"
+              },
+              {
+                "navtitle":"Banner Heading",
+                "new":"NEW"
+              },
+              {
+                "navtitle":"Dark Heading"
+              },
+              {
+                "navtitle":"Icons Catgories"
+              },
+              {
+                "navtitle":"Mini Categories"
+              },
+              {
+                "navtitle":"Background",
+                "hot":"HOT"
+              }
+              ]
+            },
+            {
+              "title":"Filter Layout",
+              "list":[{
+                "navtitle":"Top Filter",
+                "new":"NEW"
+              },
+              {
+                "navtitle":"Drawer Filter"
+                
+              },
+              {
+                "navtitle":"Off Canvas Filter"
+              },
+              {
+                "navtitle":"Brand Filter"
+              },
+              {
+                "navtitle":"Sticky Filter"
+              },
+              {
+                "navtitle":"Acordition Filter",
+                "hot":"HOT"
+              }
+              ]
+            },
+            {
+              "title":"Product Layout",
+              "list":[{
+                "navtitle":"Vertical Thumbnail",
+                "hot":"HOT"
+              },
+              {
+                "navtitle":"Horizontal Thumbnail"
+                
+              },
+              {
+                "navtitle":"Sticky Detail"
+              },
+              {
+                "navtitle":"Sticky Center",
+                "new":"NEW"
+              },
+              {
+                "navtitle":"With Background"
+              },
+              {
+                "navtitle":"Gallery Basic"
+                
+              },
+              {
+                "navtitle":"Slider Large"
+              },
+              {
+                "navtitle":"Slider Center"
+              },
+              {
+                "navtitle":"Slider Gallery"
+              },
+              {
+                "navtitle":"Extra Sidebar",
+                "new":"NEW"
+              },
+              {
+                "navtitle":"Gallery Modern"
+              }
+              ]
+            },
+            {
+              "title":"Product Type",
+              "list":[{
+                "navtitle":"Simple",
+                "new":"NEW"
+              },
+              {
+                "navtitle":"Variable Color",
+                "hot":"HOT"
+                
+              },
+              {
+                "navtitle":"Variable Image"
+              },
+              {
+                "navtitle":"Variable Select"
+              },
+              {
+                "navtitle":"External / Affiliate",
+                "hot":"HOT"
+              },
+              {
+                "navtitle":"Boosted Sale"
+                
+              }
+              ]
+            },
+            {
+              "title":"Product Extends",
+              "list":[{
+                "navtitle":"Promo Text"
+              },
+              {
+                "navtitle":"Trust Sales"
+               
+              },
+              {
+                "navtitle":"Countdown"
+              },
+              {
+                "navtitle":"Featured Video"
+              }
+              
+              ]
+            },
+            {"img":"https://topbike-store-demo.myshopify.com/cdn/shop/t/2/assets/apmenuitem_ihtml_2.jpg?v=59416964537520428881607489856"}
+            ]
         },
         {
-          "productName": "DiamondBlack Haanjo 7C Carbon",
-          "newprice": "$2,800.00",
-          "oldprice": "$3,000.00",
-          "images": [
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6_6d883936-4e26-4d9a-93b7-63837f78bf88.jpg?v=1608081784",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.1.jpg?v=1608081784",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.2.jpg?v=1608081784",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.3.jpg?v=1608081784",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.4.jpg?v=1608081784",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.5.jpg?v=1608081784",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.6.jpg?v=1608081784",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.7.jpg?v=1608081784"
-          ],
-          "about": "Part road bike, part cyclocross bike, part mountain bike, the Diamondback Haanjo 7C is 100 percent awesome … and ready for any adventure. The full carbon frame and fork are light, tough, and designed around our Endurance Geometry, which puts you in the perfect position to comfortably hammer out long..."
+          "text": "Featured",
+          "url": "#",
+          "dropdown": [{
+            
+          }]
         },
         {
-          "productName": "DiamondBlack Haanjo 8C Carbon",
-          "newprice": "$4,400.00",
-          "images": [
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5_d2330394-8374-4080-86f6-d131dafef040.jpg?v=1608081728",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.1.jpg?v=1608081728",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.2.jpg?v=1608081728",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.3.jpg?v=1608081728",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.4.jpg?v=1608081728",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.5.jpg?v=1608081728",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.6.jpg?v=1608081728",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.7.jpg?v=1608081728"
-          ],
-          "about": "DiamondBlack Haanjo 8C Carbon Meet the newest member of the Haanjo family. The Haanjo 8C is our first all carbon adventure bike. Utilizing the fan favorite DB carbon frame with endurance geometry, this bike continues in the Haanjo tradition of rugged comfort, with a relaxed headtube angle and carbon fork...."
+          "text": "Pages",
+          "url": "#",
+          "dropdown": []
         },
         {
-          "productName": "DiamondBlack Haanjo 3",
-          "newprice": "$1,100.00",
-          "oldprice": "$1,200.00",
-          "images": [
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4_c8009f9f-cf65-4e2d-82b4-9ab18259b2fe.jpg?v=1608081655",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.1.jpg?v=1608081655",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.2.jpg?v=1608081655",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.3.jpg?v=1608081655",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.4.jpg?v=1608081655",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.5.jpg?v=1608081655",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.6.jpg?v=1608081655",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.7.jpg?v=1608081655"
-          ],
-          "about": "Your next bike shouldn’t limit you — it should open up a world of new possibilities. Enter the Haanjo 3, a bike that can handle any kind of road — paved or not — that calls your name. We equipped the Haanjo 3 with a butted and formed aluminum frame..."
-        },
-        {
-          "productName": "DiamondBlack Haanjo 4",
-          "newprice": "$1,400.00",
-          "oldprice": "$1,500.00",
-          "images": [
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3_088179d9-6d45-424c-9cba-5113d4cfd1ca.jpg?v=1608081612",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.1.jpg?v=1608081612",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.2.jpg?v=1608081612",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.3.jpg?v=1608081612",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.4.jpg?v=1608081612",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.5.jpg?v=1608081612",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.6.jpg?v=1608081612",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.7.jpg?v=1608081612"
-          ],
-          "about": "We’re proud of all our aluminum Haanjo models for their capabilities as road bikes with mountain bike attitude. The Diamondback Haanjo 4, however, ups the ante considerably. We took our aluminum frame and added thru-axles front and rear to give it even more precise handling. Next, we added a carbon..."
-        },
-        {
-          "productName": "DiamondBlack Haanjo 5",
-          "newprice": "$1,800.00",
-          "oldprice": "$1,900.00",
-          "images": [
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2_4cfbe3cb-7764-4ab9-86cb-533420f5f5d1.jpg?v=1608081214",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.1.jpg?v=1608081214",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.2.jpg?v=1608081214",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.3.jpg?v=1608081214",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.4.jpg?v=1608081214",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.5.jpg?v=1608081214",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.6.jpg?v=1608081214",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.7.jpg?v=1608081214"
-          ],
-          "about": "You’re lost. And that’s a good thing because the Diamondback Haanjo 5 is a gravel bike designed to help you get off the beaten track. That’s why we built it around our trustworthy 6061 alloy frame and carbon fork with thru axles front and rear. The path off road is..."
-        },
-        {
-          "productName": "DiamondBlack Haanjo 6C Carbon",
-          "newprice": "$2,400.00",
-          "images": [
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.jpg?v=1608081158",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.1.jpg?v=1608081158",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.2.jpg?v=1608081158",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.3.jpg?v=1608081158",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.4.jpg?v=1608081158",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.5.jpg?v=1608081158",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.6.jpg?v=1608081158",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.7.jpg?v=1608081158"
-          ],
-          "about": "Wait — is this a road bike? A cyclocross rig? A commuter? The answer: Yes. The Haanjo 6C features a lightweight full carbon frame and fork, designed to balance stability and speed on- and off-road. Since the Haanjo 6C is meant to explore, it’s equipped with a SRAM Rival 1 drivetrain and a..."
+          "text": "Blogs",
+          "url": "#",
+          "dropdown": []
         }
-      ]
-    },
-    {
-      "categoryName": "Bike Accessories",
-      "products": [
+      ],
+      "header": [
         {
-          "productName":"BIKES MTB 27.5 - MAXXLITE - AIR - REMOTE - WINNER","newprice":"$100.00","about":"BOLANY FA02- Magnesium alloy: 1.65kg - Air forks - Lock Manual - Stroke: 110mm - Metallic decal","images":[
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.1.jpg?v=1607324115",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.2.jpg?v=1607324116",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.3.jpg?v=1607324116",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.4.jpg?v=1607324116",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.5.jpg?v=1607324116",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.6.jpg?v=1607324116",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.7.jpg?v=1607324116",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.8.jpg?v=1607324116"
-            
-          ]
-          
-        },{
-          "productName":"BlueSunshine Brake Kit","newprice":"$56.00","oldprice":"$60.00","about":"Used for brake systems of ordinary bikes, mountain bikes and road bikes. Rotor diameter: 160 mm; Freewheel Threaded Hubs, Hole distance of 48mm, an inner diameter of 34mm(approx). Position: Front / Rear. F-160mm/R-140mm. F-180mm/R-160mm. ROTOR MOUNTING BOLTS are included. Note: F160 Front Brake: (Also named F160/R140) If installed at front...","images":[
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product11.jpg?v=1608083590",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/11.1.jpg?v=1608083590",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/11.2.jpg?v=1608083590"
-          ]
-          
+          "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/slideshow_4.jpg?v=1613575294",
+          "title": "Off Road Bicycle",
+          "subtitle": "Here to bring your lifestyle to the next level.",
+          "btn": "SHOP NOW"
         },
         {
-          "productName":"ICAN 50mm Carbon Road Bike Wheels","newprice":"$550.00","about":"ICAN 50mm depth 23mm wide carbon rim , fit for 700x23c and 700x25c tire,best all around rim with a balance of lightweight climbing ability, aerodynamic advantage and very good crosswind stability. ICAN standard hub 6 pawls hub - 48 point of engagement with aero sapim cx-ray spoke. Weight:1460+-20g (640+-10g /...","images":[
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product10.jpg?v=1608083041",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/10.1.jpg?v=1608083041"
-            
-          ]
-          
-        },
-        {
-          "productName":"Juin Tech M1 Brake Kit","newprice":"$96.00","oldprice":"$100.00","about":"HYBRID BRAKE AND EASY TO INSTALL AND FIX-The Juin Tech M1 isn't a straightforward mechanical disc brake though, it's a hybrid or cable-operated hydraulic.This means you can use them with just about any standard MTB or road-style integrated shifters - SRAM, Shimano or Campagnolo - even ones designed for use...","images":[
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product12.jpg?v=1608083674",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/12.1.jpg?v=1608083674",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/12.3.jpg?v=1608083674"
-            
-          ]
-          
-        },
-        {
-          "productName":"SunRise Bike Full Carbon Fiber Road Rims","newprice":"$1200.00","about":"Material: Carbon Fiber-Toray T700 Test: All pass EN quality standard test Rim Finish: 3k Glossy Weight: 1540g±30g/pair excluding skewers Customized: Yes","images":[
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product9.jpg?v=1608083009",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/9.1.jpg?v=1608083009",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/9.2.jpg?v=1608083009"
-            
-          ]
-          
-        },
-        {
-          "productName":"Juin Tech M1 Brake Kit","newprice":"$96.00","oldprice":"$100.00","about":"HYBRID BRAKE AND EASY TO INSTALL AND FIX-The Juin Tech M1 isn't a straightforward mechanical disc brake though, it's a hybrid or cable-operated hydraulic.This means you can use them with just about any standard MTB or road-style integrated shifters - SRAM, Shimano or Campagnolo - even ones designed for use...","images":[
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product12.jpg?v=1608083674",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/12.1.jpg?v=1608083674",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/12.3.jpg?v=1608083674"
-            
-          ]
-          
-        },
-        {
-          "productName":"Suntour Epixon Epicon XC Air Fork","newprice":"$235.00","about":"Brand: SUNTOUR SunTour or SR Suntour is a manufacturer of bicycle components. It was Japanese-owned and managed, based in Osaka, until the mid-1990s when its name was sold to a Taiwan conglomerate. Its products ranged from suspension forks to derailleurs. Travel: 100mm/120mm Steerer: straight 1 1/8 Weight: 1880g for 27.5...","images":[
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/7.jpg?v=1607317014",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/7.3.jpg?v=1607317014",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/7.6.jpg?v=1607317014"
-            
-          ]
+          "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/slideshow_3.jpg?v=1613575289",
+          "title": "Sport Bicycle",
+          "subtitle": "Accompany you to the end of the road",
+          "btn": "BUY NOW"
         }
-      ]
-    },
-    {
-      "categoryName": "Helmet",
-      "products":[
+      ],
+      "shopify": [
         {
-          "productName":"HOCALISS Ultralight Bike Helmets.","newprice":"$56.00","about":"Complies with CPSC and EN1078 Certified to Safety standard . PC shell and EPS core for additional protection. Adjustable Fits head sizes (S/M 54-58cm) and (L/XL 58-62cm), Easily adjusts size for snugger fit. Cool & Comfortable lightweight and 23 vents holes. The soft straps are adjustable.This helmet is a comfortable...","images":[
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product14.jpg?v=1608083545",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/14.1.jpg?v=1608083545",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/14.2.jpg?v=1608083545",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/14.3.jpg?v=1608083545",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/14.4.jpg?v=1608083545"
-          ]
+          "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/free-delivery.png?v=1613577961",
+          "title": "FREE SHIPPING",
+          "subtitle": "Only order from $230"
         },
         {
-          "productName":"Schwinn Thrasher Bike Helmet.","newprice":"$120.00","about":"This schwinn thrasher lightweight helmet is designed for adults; suggested age range: 14 years old and up; suggested head circumference: 22.88 to 24.5 inchesSchwinn 360° comfort pairs a dial adjustable fit system with full range padding for the perfect customized, comfortable fitLightweight, three piece microshell enhances durability without weighing you...","images":[
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/product13.jpg?v=1608083493",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/13.1.jpg?v=1608083493",
-            "https://topbike-store-demo.myshopify.com/cdn/shop/products/13.2.jpg?v=1608083493"
+          "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/return-of-investment.png?v=1613577961",
+          "title": "MONEY RETURN",
+          "subtitle": "30 days free to return money"
+        },
+        {
+          "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/24-hours-support.png?v=1613577961",
+          "title": "SUPPORT 24/7",
+          "subtitle": "Always ready to support"
+        }
+      ],
+      "expiresin": [
+        {
+          "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/countdown-v1.jpg?v=1613575291",
+          "title": "Only Online",
+          "subtitle": "GET 30% OFF YOUR ORDER OF $100 OR MORE",
+          "promocode": "USE CODE “TOPBIKE30”",
+          "btn": "SHOP NOW"
+        }
+      ],
+      "filteredproducts": [
+        {
+          "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/collection-bike.jpg?v=1613575695",
+          "title": "Bicycle"
+        },
+        {
+          "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/collection-accessory.jpg?v=1613575695",
+          "title": "Bike Accessories"
+        },
+        {
+          "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/collection-helmet.jpg?v=1613575695",
+          "title": "Helmet"
+        }
+      ],
+      "info": [
+        {
+          "image": "https://topbike-store-demo.myshopify.com/cdn/shop/articles/blog-post3_1024x1024.jpg?v=1607478877",
+          "title": "One Week in Bali: A Great Trip for a Lifetime to Choose",
+          "subtitle": "Are you planning to have a short trip to Bali? What is best about a short visit to a particular place is...",
+          "date": [
+            "08",
+            "DEC"
+          ],
+          "news": "NEWS",
+          "btn": "Readmore"
+        },
+        {
+          "image": "https://topbike-store-demo.myshopify.com/cdn/shop/articles/blog-post2_1024x1024.jpg?v=1607478478",
+          "title": "You Can Save an Average of $544 on Expenses Annually",
+          "subtitle": "In the dark, cold winter, it’s easy to stay cooped up and fall out of our exercise routines. However, the longer days...",
+          "date": [
+            "08",
+            "DEC"
+          ],
+          "news": "NEWS",
+          "btn": "Readmore"
+        },
+        {
+          "image": "https://topbike-store-demo.myshopify.com/cdn/shop/articles/blog-post1_1024x1024.jpg?v=1607478360",
+          "title": "You Can Save an Average of $544 on Expenses Annually",
+          "subtitle": "In the dark, cold winter, it’s easy to stay cooped up and fall out of our exercise routines. However, the longer days...",
+          "date": [
+            "08",
+            "DEC"
+          ],
+          "news": "NEWS",
+          "btn": "Readmore"
+        }
+      ],
+      "createdAt": "2024-01-04T17:31:45.867Z",
+      "updatedAt": "2024-01-05T08:39:58.392Z",
+      "__v": 0,
+      "footer": [
+        {
+          "logopart": [
+            {
+              "logo": "https://topbike-store-demo.myshopify.com/cdn/shop/files/LOGO.png?v=1613575279",
+              "parag": "The simple, delicate and light design makes it comfortable for everyone."
+            }
+          ],
+          "nav": [
+            {
+              "title": "Shop",
+              "navigate": [
+                "Shopping",
+                "Bicycle",
+                "Bicycle Accessory",
+                "Helmet"
+              ]
+            },
+            {
+              "title": "About Us",
+              "navigate": [
+                "About Us",
+                "Pagination",
+                "Terms & Conditions",
+                "Contact",
+                "Accessories",
+                "Term of use"
+              ]
+            },
+            {
+              "title": "Infomation",
+              "navigate": [
+                "Address",
+                "Privacy Policy",
+                "Terms & Conditions",
+                "Products Return",
+                "Wholesale Policy"
+              ]
+            }
           ]
         }
       ]
     }
   ]
-}
+  {
+    "design": [{
+    "productsec": [
+      {
+        "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/slider2.jpg?v=1613576060",
+        "title": "Products"
+      }
+    ],
+    "salesec": [
+      {
+        "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/Biking-Basics-5-Essential-Bike-Tools-to-Take-with-You-on-a-Cycling-Adventure.jpg?v=1613576668",
+        "title": "A NEW COLLECTION",
+        "subtitle": "SALE UP TO 30%",
+        "btn": "SHOP NOW"
+      }
+    ]
+  }],
+   "allproducts": [
+     {
+       "categoryName": "Bicycle",
+       "productlar": [
+         {
+           "productName": "RELEASE 2",
+           "newprice": "$3,250.00",
+           "images": [
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16_f996b4d3-b7d2-4a6e-9fbd-a430d3143e19.jpg?v=1608082060",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.1.jpg?v=1608082060",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.2.jpg?v=1608082060",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.3.jpg?v=1608082060",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.4.jpg?v=1608082060",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.5.jpg?v=1608082060",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.6.jpg?v=1608082060",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16.7.jpg?v=1608082060"
+           ],
+           "about": "The Release turned heads and earned rave reviews from the cycling press when it debuted. We’re proud of that fact, but (at the risk of sounding conceited) we’re not entirely surprised. Our patent-pending Level Link system is the best-pedaling suspension design we’ve ever cooked up. What’s more, the bike’s progressive..."
+         },
+         {
+           "productName": "SYNC'R CARBON 29",
+           "newprice": "$3,500.00",
+           "images": [
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15_e805e1b0-a9ea-4b4a-981c-baf6c09b51b7.jpg?v=1608082102",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.1.jpg?v=1608082102",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.2.jpg?v=1608082102",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.3.jpg?v=1608082102",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.4.jpg?v=1608082102",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.5.jpg?v=1608082102",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.6.jpg?v=1608082102",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product15.7.jpg?v=1608082102"
+           ],
+           "about": "Easy to pedal up, bomber on the way down, playful the whole ride. See what all the fuss is about with our most progressive hardtail that now comes as a 29er. An all-new monocoque carbon frame design features a tapered headtube and Boost rear spacing for increased stiffness. Burly 29×2.5-inch..."
+         },
+         {
+           "productName": "DiamondBlack Haanjo 7C Carbon",
+           "newprice": "$2,800.00",
+           "oldprice": "$3,000.00",
+           "images": [
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6_6d883936-4e26-4d9a-93b7-63837f78bf88.jpg?v=1608081784",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.1.jpg?v=1608081784",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.2.jpg?v=1608081784",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.3.jpg?v=1608081784",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.4.jpg?v=1608081784",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.5.jpg?v=1608081784",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.6.jpg?v=1608081784",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6.7.jpg?v=1608081784"
+           ],
+           "about": "Part road bike, part cyclocross bike, part mountain bike, the Diamondback Haanjo 7C is 100 percent awesome … and ready for any adventure. The full carbon frame and fork are light, tough, and designed around our Endurance Geometry, which puts you in the perfect position to comfortably hammer out long..."
+         },
+         {
+           "productName": "DiamondBlack Haanjo 8C Carbon",
+           "newprice": "$4,400.00",
+           "images": [
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5_d2330394-8374-4080-86f6-d131dafef040.jpg?v=1608081728",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.1.jpg?v=1608081728",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.2.jpg?v=1608081728",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.3.jpg?v=1608081728",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.4.jpg?v=1608081728",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.5.jpg?v=1608081728",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.6.jpg?v=1608081728",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5.7.jpg?v=1608081728"
+           ],
+           "about": "DiamondBlack Haanjo 8C Carbon Meet the newest member of the Haanjo family. The Haanjo 8C is our first all carbon adventure bike. Utilizing the fan favorite DB carbon frame with endurance geometry, this bike continues in the Haanjo tradition of rugged comfort, with a relaxed headtube angle and carbon fork...."
+         },
+         {
+           "productName": "DiamondBlack Haanjo 3",
+           "newprice": "$1,100.00",
+           "oldprice": "$1,200.00",
+           "images": [
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4_c8009f9f-cf65-4e2d-82b4-9ab18259b2fe.jpg?v=1608081655",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.1.jpg?v=1608081655",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.2.jpg?v=1608081655",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.3.jpg?v=1608081655",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.4.jpg?v=1608081655",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.5.jpg?v=1608081655",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.6.jpg?v=1608081655",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4.7.jpg?v=1608081655"
+           ],
+           "about": "Your next bike shouldn’t limit you — it should open up a world of new possibilities. Enter the Haanjo 3, a bike that can handle any kind of road — paved or not — that calls your name. We equipped the Haanjo 3 with a butted and formed aluminum frame..."
+         },
+         {
+           "productName": "DiamondBlack Haanjo 4",
+           "newprice": "$1,400.00",
+           "oldprice": "$1,500.00",
+           "images": [
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3_088179d9-6d45-424c-9cba-5113d4cfd1ca.jpg?v=1608081612",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.1.jpg?v=1608081612",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.2.jpg?v=1608081612",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.3.jpg?v=1608081612",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.4.jpg?v=1608081612",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.5.jpg?v=1608081612",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.6.jpg?v=1608081612",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3.7.jpg?v=1608081612"
+           ],
+           "about": "We’re proud of all our aluminum Haanjo models for their capabilities as road bikes with mountain bike attitude. The Diamondback Haanjo 4, however, ups the ante considerably. We took our aluminum frame and added thru-axles front and rear to give it even more precise handling. Next, we added a carbon..."
+         },
+         {
+           "productName": "DiamondBlack Haanjo 5",
+           "newprice": "$1,800.00",
+           "oldprice": "$1,900.00",
+           "images": [
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2_4cfbe3cb-7764-4ab9-86cb-533420f5f5d1.jpg?v=1608081214",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.1.jpg?v=1608081214",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.2.jpg?v=1608081214",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.3.jpg?v=1608081214",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.4.jpg?v=1608081214",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.5.jpg?v=1608081214",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.6.jpg?v=1608081214",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2.7.jpg?v=1608081214"
+           ],
+           "about": "You’re lost. And that’s a good thing because the Diamondback Haanjo 5 is a gravel bike designed to help you get off the beaten track. That’s why we built it around our trustworthy 6061 alloy frame and carbon fork with thru axles front and rear. The path off road is..."
+         },
+         {
+           "productName": "DiamondBlack Haanjo 6C Carbon",
+           "newprice": "$2,400.00",
+           "images": [
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.jpg?v=1608081158",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.1.jpg?v=1608081158",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.2.jpg?v=1608081158",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.3.jpg?v=1608081158",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.4.jpg?v=1608081158",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.5.jpg?v=1608081158",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.6.jpg?v=1608081158",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.7.jpg?v=1608081158"
+           ],
+           "about": "Wait — is this a road bike? A cyclocross rig? A commuter? The answer: Yes. The Haanjo 6C features a lightweight full carbon frame and fork, designed to balance stability and speed on- and off-road. Since the Haanjo 6C is meant to explore, it’s equipped with a SRAM Rival 1 drivetrain and a..."
+         }
+       ]
+     },
+     {
+       "categoryName": "Bike Accessories",
+       "productlar": [
+         {
+           "productName":"BIKES MTB 27.5 - MAXXLITE - AIR - REMOTE - WINNER","newprice":"$100.00","about":"BOLANY FA02- Magnesium alloy: 1.65kg - Air forks - Lock Manual - Stroke: 110mm - Metallic decal","images":[
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.1.jpg?v=1607324115",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.2.jpg?v=1607324116",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.3.jpg?v=1607324116",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.4.jpg?v=1607324116",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.5.jpg?v=1607324116",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.6.jpg?v=1607324116",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.7.jpg?v=1607324116",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.8.jpg?v=1607324116"
+             
+           ]
+           
+         },{
+           "productName":"BlueSunshine Brake Kit","newprice":"$56.00","oldprice":"$60.00","about":"Used for brake systems of ordinary bikes, mountain bikes and road bikes. Rotor diameter: 160 mm; Freewheel Threaded Hubs, Hole distance of 48mm, an inner diameter of 34mm(approx). Position: Front / Rear. F-160mm/R-140mm. F-180mm/R-160mm. ROTOR MOUNTING BOLTS are included. Note: F160 Front Brake: (Also named F160/R140) If installed at front...","images":[
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product11.jpg?v=1608083590",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/11.1.jpg?v=1608083590",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/11.2.jpg?v=1608083590"
+           ]
+           
+         },
+         {
+           "productName":"ICAN 50mm Carbon Road Bike Wheels","newprice":"$550.00","about":"ICAN 50mm depth 23mm wide carbon rim , fit for 700x23c and 700x25c tire,best all around rim with a balance of lightweight climbing ability, aerodynamic advantage and very good crosswind stability. ICAN standard hub 6 pawls hub - 48 point of engagement with aero sapim cx-ray spoke. Weight:1460+-20g (640+-10g /...","images":[
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product10.jpg?v=1608083041",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/10.1.jpg?v=1608083041"
+             
+           ]
+           
+         },
+         {
+           "productName":"Juin Tech M1 Brake Kit","newprice":"$96.00","oldprice":"$100.00","about":"HYBRID BRAKE AND EASY TO INSTALL AND FIX-The Juin Tech M1 isn't a straightforward mechanical disc brake though, it's a hybrid or cable-operated hydraulic.This means you can use them with just about any standard MTB or road-style integrated shifters - SRAM, Shimano or Campagnolo - even ones designed for use...","images":[
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product12.jpg?v=1608083674",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/12.1.jpg?v=1608083674",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/12.3.jpg?v=1608083674"
+             
+           ]
+           
+         },
+         {
+           "productName":"SunRise Bike Full Carbon Fiber Road Rims","newprice":"$1200.00","about":"Material: Carbon Fiber-Toray T700 Test: All pass EN quality standard test Rim Finish: 3k Glossy Weight: 1540g±30g/pair excluding skewers Customized: Yes","images":[
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product9.jpg?v=1608083009",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/9.1.jpg?v=1608083009",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/9.2.jpg?v=1608083009"
+             
+           ]
+           
+         },
+         {
+           "productName":"Juin Tech M1 Brake Kit","newprice":"$96.00","oldprice":"$100.00","about":"HYBRID BRAKE AND EASY TO INSTALL AND FIX-The Juin Tech M1 isn't a straightforward mechanical disc brake though, it's a hybrid or cable-operated hydraulic.This means you can use them with just about any standard MTB or road-style integrated shifters - SRAM, Shimano or Campagnolo - even ones designed for use...","images":[
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product12.jpg?v=1608083674",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/12.1.jpg?v=1608083674",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/12.3.jpg?v=1608083674"
+             
+           ]
+           
+         },
+         {
+           "productName":"Suntour Epixon Epicon XC Air Fork","newprice":"$235.00","about":"Brand: SUNTOUR SunTour or SR Suntour is a manufacturer of bicycle components. It was Japanese-owned and managed, based in Osaka, until the mid-1990s when its name was sold to a Taiwan conglomerate. Its products ranged from suspension forks to derailleurs. Travel: 100mm/120mm Steerer: straight 1 1/8 Weight: 1880g for 27.5...","images":[
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/7.jpg?v=1607317014",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/7.3.jpg?v=1607317014",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/7.6.jpg?v=1607317014"
+             
+           ]
+         }
+       ]
+     },
+     {
+       "categoryName": "Helmet",
+       "productlar":[
+         {
+           "productName":"HOCALISS Ultralight Bike Helmets.","newprice":"$56.00","about":"Complies with CPSC and EN1078 Certified to Safety standard . PC shell and EPS core for additional protection. Adjustable Fits head sizes (S/M 54-58cm) and (L/XL 58-62cm), Easily adjusts size for snugger fit. Cool & Comfortable lightweight and 23 vents holes. The soft straps are adjustable.This helmet is a comfortable...","images":[
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product14.jpg?v=1608083545",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/14.1.jpg?v=1608083545",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/14.2.jpg?v=1608083545",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/14.3.jpg?v=1608083545",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/14.4.jpg?v=1608083545"
+           ]
+         },
+         {
+           "productName":"Schwinn Thrasher Bike Helmet.","newprice":"$120.00","about":"This schwinn thrasher lightweight helmet is designed for adults; suggested age range: 14 years old and up; suggested head circumference: 22.88 to 24.5 inchesSchwinn 360° comfort pairs a dial adjustable fit system with full range padding for the perfect customized, comfortable fitLightweight, three piece microshell enhances durability without weighing you...","images":[
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/product13.jpg?v=1608083493",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/13.1.jpg?v=1608083493",
+             "https://topbike-store-demo.myshopify.com/cdn/shop/products/13.2.jpg?v=1608083493"
+           ]
+         }
+       ]
+     }
+   ]
+ }

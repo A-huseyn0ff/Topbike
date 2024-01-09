@@ -1,42 +1,3 @@
-// import React, { useState, useEffect } from 'react';
-// import Navbar from '../Layout/Navbar';
-// import { Outlet } from 'react-router-dom';
-// import Footer from '../Layout/Footer';
-// import loading from '../Assets/image_processing20200319-11833-uadqjf.gif';
-
-// const MainLayout = () => {
-//   const [isLoading, setIsLoading] = useState(true);
-
-//   useEffect(() => {
-    
-//     const loadingTimeout = setTimeout(() => {
-//       setIsLoading(false);
-//     }, 5000); 
-
-    
-//     return () => clearTimeout(loadingTimeout);
-//   }, []);
-
-//   return (
-//     <>
-//       {isLoading ? (
-        
-//         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh',width:'100%',boxSizing:'border-box' }}>
-//           <img src={loading} alt="Loading" style={{width:"100%",height:"100%"}}/>
-//         </div>
-//       ) : (
-        
-//         <>
-//           <Navbar />
-//           <Outlet />
-//           <Footer />
-//         </>
-//       )}
-//     </>
-//   );
-// };
-
-// export default MainLayout;
 import React, { useState, useEffect } from 'react';
 import Navbar from '../Layout/Navbar';
 import { Outlet } from 'react-router-dom';
@@ -79,3 +40,4 @@ const MainLayout = () => {
 };
 
 export default MainLayout;
+

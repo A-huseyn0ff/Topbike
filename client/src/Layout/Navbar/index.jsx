@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./navbar.scss";
 import { FiSearch } from "react-icons/fi";
 import { FaRegUser } from "react-icons/fa";
@@ -18,7 +18,7 @@ const Navbar = () => {
   const WishlistArr = useSelector((state) => state.wishlist.value)
   const basketArr = useSelector((state) => state.basket.value)
   const dispatch = useDispatch()
-  
+  const location = useLocation();
 
   let subTotal = 0;
 
@@ -65,7 +65,8 @@ const Navbar = () => {
     <>
       {navData.map((item, index) => (
         <>
-          <nav key={index} className={scrollDown ? 'scrolled' : ''}>
+        <iframe src="https://player.vimeo.com/video/203552982?background=1&amp;quality=1080p&amp;loop=1" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+          <nav key={index} className={`${scrollDown ? 'scrolled' : ''} ${location.pathname.startsWith('/details/') ? 'navactive' : ''}`}>
             <div className="nav_container">
               <Link to={"/"} className="logo">
                 {" "}
