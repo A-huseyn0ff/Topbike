@@ -19,10 +19,10 @@ export const updateData = async (req, res) => {
   res.send(Designdata);
 };
 export const postData = async (req, res) => {
-  const { logo, links, header,shopify,expiresin,filteredproducts,info,footer } = req.body;
+  const { logo,links,header,shopify,expiresin,filteredproducts,info,footer,dropdown } = req.body;
 
   try {
-    const Designdata = new NavbarSchema ({ logo, links, header, shopify,expiresin,filteredproducts,info,footer });
+    const Designdata = new NavbarSchema ({dropdown, logo,links,header, shopify,expiresin,filteredproducts,info,footer });
     const savedNavbar = await Designdata.save();;
     res.status(201).json(savedNavbar);
   } catch (error) {

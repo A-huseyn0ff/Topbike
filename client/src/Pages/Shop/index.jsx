@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Shop.scss";
+import { Helmet } from "react-helmet";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaRegHeart } from "react-icons/fa";
 import { SlBag } from "react-icons/sl";
@@ -72,6 +73,11 @@ const Shop = () => {
   };
   return (
     <>
+    <Helmet>
+      <title>
+    Products – TopBike - Bike Store Responsive Shopify Theme
+  </title>
+    </Helmet>
       {pagedatas.map((item, index) => (
         <div key={index} className="shop-container">
           {item.design.map((y) => (

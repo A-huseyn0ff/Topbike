@@ -200,18 +200,163 @@
           "text": "Featured",
           "url": "#",
           "dropdown": [{
-            
+            "title":"9 PRODUCT HOVERHOT",
+            "list":[{
+              "navtitle":"Product Hover Style 1",
+            },
+          {
+            "navtitle":" Product Hover Style 2"
+          },
+        {
+          "navtitle":"Product Hover Style 3"
+        },
+      {
+        "navtitle":"Product Hover Style 4"
+      },
+      {
+        "navtitle":"All Style",
+        "new":"NEW"
+      }
+    ]
+          },
+          {
+            "title":"THEME ELEMENT",
+            "list":[{
+              "navtitle":"Ajax Search"
+            },
+          {
+            "navtitle":" Ajax Minicart"
+          },
+        {
+          "navtitle":"Recently Products"
+        },
+      {
+        "navtitle":"Social Share"
+      }
+    ]
+          },
+          {
+            "img":"https://player.vimeo.com/video/203552982?background=1&amp;quality=1080p&amp;loop=1"
           }]
         },
         {
           "text": "Pages",
           "url": "#",
-          "dropdown": []
+          "dropdown": [{
+            "title":"DEMO LAYOUT",
+            "list":[{
+              "navtitle":"Full Screen",
+              "new":"NEW"
+            },
+          {
+            "navtitle":"Heading Background"
+          },
+        {
+          "navtitle":"Simple"
+        }
+    ]
+          },
+        {
+          "title":"PRE - BUILD PAGES",
+          "list":[{
+            "navtitle":"About Us",
+            "url":"/aboutus"
+            
+          },
+        {
+          "navtitle":"Contact Us",
+          "url":"/contact"
+        },
+      {
+        "navtitle":"FAQs",
+        "url":"/faq"
+      },
+      {
+        "navtitle":"404 Page",
+        "url":"/*"
+      },
+      {
+        "navtitle":"Login/Register",
+        "new":"NEW"
+      }
+  ]
+        },
+        {
+          "title":"ECOMERCE",
+          "list":[{
+            "navtitle":"Shop",
+           "url":"/products"
+          },
+        {
+          "navtitle":"Cart",
+          "hot":"HOT",
+          "url":"/card"
+        },
+      {
+        "navtitle":"Checkout"
+      },
+      {
+        "navtitle":"My Account"
+      }
+  ]
+        }]
         },
         {
           "text": "Blogs",
           "url": "#",
-          "dropdown": []
+          "dropdown": [
+            {
+              "title":" Layout",
+              "list":[{
+                "navtitle":"Grid"
+               
+              },
+            {
+              "navtitle":"Classic"
+            },
+          {
+            "navtitle":"Standar"
+          },
+          {
+            "navtitle":"No Sidebar"
+          },
+          {
+            "navtitle":"Left Sidebar",
+            "new":"NEW"
+          },
+          {
+            "navtitle":"Right Sidebar",
+            "hot":"HOT"
+          }
+      ]
+            },
+            {
+              "title":"SINGLE POST",
+              "list":[{
+                "navtitle":"No Sidebar",
+                "new":"NEW"
+               
+              },
+            {
+              "navtitle":" Left Sidebar"
+            },
+          {
+            "navtitle":"Right Sidebar"
+          },
+          {
+            "navtitle":"Standar"
+          },
+          {
+            "navtitle":"Audio"
+            
+          },
+          {
+            "navtitle":"Video",
+            "hot":"HOT"
+          }
+      ]
+            }
+          ]
         }
       ],
       "header": [
@@ -589,3 +734,270 @@
      }
    ]
  }
+ {
+  "logo": "https://topbike-store-demo.myshopify.com/cdn/shop/files/Untitled-2.png?v=1613575289",
+  "links": [
+    {
+      "text": "Home",
+      "url": "/",
+      "dropdown": [
+        { "title": "Home 1", "img": "https://topbike-store-demo.myshopify.com/cdn/shop/files/home1_79702614-1d24-4067-9a69-2ee018b89d3b.jpg?v=1613577776" },
+        { "title": "Home 2", "img": "https://topbike-store-demo.myshopify.com/cdn/shop/files/home2_411f599e-59e9-4ba9-8de2-3d92ad6282c6.jpg?v=1613577776" },
+        { "title": "Home 3", "img": "https://topbike-store-demo.myshopify.com/cdn/shop/files/home3_8ef816a2-0531-4578-a497-139164f99d10.jpg?v=1613577776" },
+        { "title": "Home 4", "img": "https://topbike-store-demo.myshopify.com/cdn/shop/files/home4_3c5e0131-1366-4c93-a41b-9f35d04f4449.jpg?v=1613577776" },
+        { "title": "Home 5", "img": "https://topbike-store-demo.myshopify.com/cdn/shop/files/home5_6e4f660a-7d2a-4559-869e-761708fefc9a.jpg?v=1613577776" }
+      ]
+    },
+    {
+      "text": "Shop",
+      "url": "/products",
+      "hot": "HOT",
+      "dropdown": [
+        {
+          "title": "Shop Layout",
+          "list": [
+            { "navtitle": "Pagination" },
+            { "navtitle": "Ajax Loading", "hot": "HOT" },
+            { "navtitle": "List View" },
+            { "navtitle": "Background Modern" },
+            { "navtitle": "Fullwidth Layout" },
+            { "navtitle": "Sidebar Layout" }
+          ]
+        },
+        {
+          "title": "Shop Heading",
+          "list": [
+            { "navtitle": "Small Heading" },
+            { "navtitle": "Banner Heading", "new": "NEW" },
+            { "navtitle": "Dark Heading" },
+            { "navtitle": "Icons Catgories" },
+            { "navtitle": "Mini Categories" },
+            { "navtitle": "Background", "hot": "HOT" }
+          ]
+        },
+        {
+          "title": "Filter Layout",
+          "list": [
+            { "navtitle": "Top Filter", "new": "NEW" },
+            { "navtitle": "Drawer Filter" },
+            { "navtitle": "Off Canvas Filter" },
+            { "navtitle": "Brand Filter" },
+            { "navtitle": "Sticky Filter" },
+            { "navtitle": "Acordition Filter", "hot": "HOT" }
+          ]
+        },
+        {
+          "title": "Product Layout",
+          "list": [
+            { "navtitle": "Vertical Thumbnail", "hot": "HOT" },
+            { "navtitle": "Horizontal Thumbnail" },
+            { "navtitle": "Sticky Detail" },
+            { "navtitle": "Sticky Center", "new": "NEW" },
+            { "navtitle": "With Background" },
+            { "navtitle": "Gallery Basic" },
+            { "navtitle": "Slider Large" },
+            { "navtitle": "Slider Center" },
+            { "navtitle": "Slider Gallery" },
+            { "navtitle": "Extra Sidebar", "new": "NEW" },
+            { "navtitle": "Gallery Modern" }
+          ]
+        },
+        {
+          "title": "Product Type",
+          "list": [
+            { "navtitle": "Simple", "new": "NEW" },
+            { "navtitle": "Variable Color", "hot": "HOT" },
+            { "navtitle": "Variable Image" },
+            { "navtitle": "Variable Select" },
+            { "navtitle": "External / Affiliate", "hot": "HOT" },
+            { "navtitle": "Boosted Sale" }
+          ]
+        },
+        {
+          "title": "Product Extends",
+          "list": [
+            { "navtitle": "Promo Text" },
+            { "navtitle": "Trust Sales" },
+            { "navtitle": "Countdown" },
+            { "navtitle": "Featured Video" }
+          ]
+        },
+        { "img": "https://topbike-store-demo.myshopify.com/cdn/shop/t/2/assets/apmenuitem_ihtml_2.jpg?v=59416964537520428881607489856" }
+      ]
+    },
+    {
+      "text": "Featured",
+      "url": "#",
+      "dropdown": [
+        {
+          "title": "9 PRODUCT HOVERHOT",
+          "list": [
+            { "navtitle": "Product Hover Style 1" },
+            { "navtitle": "Product Hover Style 2" },
+            { "navtitle": "Product Hover Style 3" },
+            { "navtitle": "Product Hover Style 4" },
+            { "navtitle": "All Style", "new": "NEW" }
+          ]
+        },
+        {
+          "title": "THEME ELEMENT",
+          "list": [
+            { "navtitle": "Ajax Search" },
+            { "navtitle": "Ajax Minicart" },
+            { "navtitle": "Recently Products" },
+            { "navtitle": "Social Share" }
+          ]
+        },
+        { "img": "https://player.vimeo.com/video/203552982?background=1&amp;quality=1080p&amp;loop=1" }
+      ]
+    },
+    {
+      "text": "Pages",
+      "url": "#",
+      "dropdown": [
+        {
+          "title": "DEMO LAYOUT",
+          "list": [
+            { "navtitle": "Full Screen", "new": "NEW" },
+            { "navtitle": "Heading Background" },
+            { "navtitle": "Simple" }
+          ]
+        },
+        {
+          "title": "PRE - BUILD PAGES",
+          "list": [
+            { "navtitle": "About Us", "url": "/aboutus" },
+            { "navtitle": "Contact Us", "url": "/contact" },
+            { "navtitle": "FAQs", "url": "/faq" },
+            { "navtitle": "404 Page", "url": "/*" },
+            { "navtitle": "Login/Register", "new": "NEW" }
+          ]
+        },
+        {
+          "title": "ECOMERCE",
+          "list": [
+            { "navtitle": "Shop", "url": "/products" },
+            { "navtitle": "Cart", "hot": "HOT", "url": "/card" },
+            { "navtitle": "Checkout" },
+            { "navtitle": "My Account" }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "Blogs",
+      "url": "#",
+      "dropdown": [
+        {
+          "title": " Layout",
+          "list": [
+            { "navtitle": "Grid" },
+            { "navtitle": "Classic" },
+            { "navtitle": "Standar" },
+            { "navtitle": "No Sidebar" },
+            { "navtitle": "Left Sidebar", "new": "NEW" },
+            { "navtitle": "Right Sidebar", "hot": "HOT" }
+          ]
+        },
+        {
+          "title": "SINGLE POST",
+          "list": [
+            { "navtitle": "No Sidebar", "new": "NEW" },
+            { "navtitle": " Left Sidebar" },
+            { "navtitle": "Right Sidebar" },
+            { "navtitle": "Standar" },
+            { "navtitle": "Audio" },
+            { "navtitle": "Video", "hot": "HOT" }
+          ]
+        }
+      ]
+    }
+  ],
+  "header": [
+    {
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/slideshow_4.jpg?v=1613575294",
+      "title": "Off Road Bicycle",
+      "subtitle": "Here to bring your lifestyle to the next level.",
+      "btn": "SHOP NOW"
+    },
+    {
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/slideshow_3.jpg?v=1613575289",
+      "title": "Sport Bicycle",
+      "subtitle": "Accompany you to the end of the road",
+      "btn": "BUY NOW"
+    }
+  ],
+  "shopify": [
+    { "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/free-delivery.png?v=1613577961", "title": "FREE SHIPPING", "subtitle": "Only order from $230" },
+    { "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/return-of-investment.png?v=1613577961", "title": "MONEY RETURN", "subtitle": "30 days free to return money" },
+    { "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/24-hours-support.png?v=1613577961", "title": "SUPPORT 24/7", "subtitle": "Always ready to support" }
+  ],
+  "expiresin": [
+    {
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/countdown-v1.jpg?v=1613575291",
+      "title": "Only Online",
+      "subtitle": "GET 30% OFF YOUR ORDER OF $100 OR MORE",
+      "promocode": "USE CODE “TOPBIKE30”",
+      "btn": "SHOP NOW"
+    }
+  ],
+  "filteredproducts": [
+    { "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/collection-bike.jpg?v=1613575695", "title": "Bicycle" },
+    { "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/collection-accessory.jpg?v=1613575695", "title": "Bike Accessories" },
+    { "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/collection-helmet.jpg?v=1613575695", "title": "Helmet" }
+  ],
+  "info": [
+    {
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/articles/blog-post3_1024x1024.jpg?v=1607478877",
+      "title": "One Week in Bali: A Great Trip for a Lifetime to Choose",
+      "subtitle": "Are you planning to have a short trip to Bali? What is best about a short visit to a particular place is...",
+      "date": ["08", "DEC"],
+      "news": "NEWS",
+      "btn": "Readmore"
+    },
+    {
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/articles/blog-post2_1024x1024.jpg?v=1607478478",
+      "title": "You Can Save an Average of $544 on Expenses Annually",
+      "subtitle": "In the dark, cold winter, it’s easy to stay cooped up and fall out of our exercise routines. However, the longer days...",
+      "date": ["08", "DEC"],
+      "news": "NEWS",
+      "btn": "Readmore"
+    },
+    {
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/articles/blog-post1_1024x1024.jpg?v=1607478360",
+      "title": "You Can Save an Average of $544 on Expenses Annually",
+      "subtitle": "In the dark, cold winter, it’s easy to stay cooped up and fall out of our exercise routines. However, the longer days...",
+      "date": ["08", "DEC"],
+      "news": "NEWS",
+      "btn": "Readmore"
+    }
+  ],
+  "createdAt": "2024-01-04T17:31:45.867Z",
+  "updatedAt": "2024-01-05T08:39:58.392Z",
+  "__v": 0,
+  "footer": [
+    {
+      "logopart": [
+        {
+          "logo": "https://topbike-store-demo.myshopify.com/cdn/shop/files/LOGO.png?v=1613575279",
+          "parag": "The simple, delicate and light design makes it comfortable for everyone."
+        }
+      ],
+      "nav": [
+        {
+          "title": "Shop",
+          "navigate": ["Shopping", "Bicycle", "Bicycle Accessory", "Helmet"]
+        },
+        {
+          "title": "About Us",
+          "navigate": ["About Us", "Pagination", "Terms & Conditions", "Contact", "Accessories", "Term of use"]
+        },
+        {
+          "title": "Infomation",
+          "navigate": ["Address", "Privacy Policy", "Terms & Conditions", "Products Return", "Wholesale Policy"]
+        }
+      ]
+    }
+  ]
+}
+

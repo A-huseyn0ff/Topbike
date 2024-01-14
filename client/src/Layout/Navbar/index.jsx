@@ -65,20 +65,20 @@ const Navbar = () => {
     <>
       {navData.map((item, index) => (
         <>
-        <iframe src="https://player.vimeo.com/video/203552982?background=1&amp;quality=1080p&amp;loop=1" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-          <nav key={index} className={`${scrollDown ? 'scrolled' : ''} ${location.pathname.startsWith('/details/') ? 'navactive' : ''}`}>
+        {/* <iframe src="https://player.vimeo.com/video/203552982?background=1&amp;quality=1080p&amp;loop=1" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe> */}
+          <nav key={index} className={`${scrollDown ? 'scrolled' : ''} ${location.pathname.startsWith('/details/') || location.pathname.startsWith('/*')  ?  'navactive' : ''}`}>
             <div className="nav_container">
               <Link to={"/"} className="logo">
                 {" "}
                 <img src={item.logo} alt="logo" />{" "}
               </Link>
-              <ul>
+              
+              <ul className="dropdown">
                 {item.links.map((link, linkIndex) => (
                   <li>
-                    <Link to={link.url} key={linkIndex}>
+                    <Link to={link.url} key={linkIndex} className="main_nav">
                       {link.text}
-                    </Link>
-                    {link.hot && (
+                      {link.hot && (
                       <span>
                         <svg
                           stroke="currentColor"
@@ -96,9 +96,276 @@ const Navbar = () => {
                         <p>{link.hot}</p>
                       </span>
                     )}
+                    </Link>
+                    {link.dropdown ? (
+                
+                <>
+                
+                </>
+              ) : (
+               
+                <Link to={link.url}>{link.text}</Link>
+              )}
+                   
+                    {link.text === "Home" ? 
+          (
+            
+            <>
+           
+          
+              {link.dropdown && (
+                <div className="dropdown_container">
+                  {link.dropdown.map((dropdownItem, dropdownIndex) => (
+                    <ul key={dropdownIndex} className="home_dropdown">
+                      <img src={dropdownItem.img} alt="" />
+                      <Link to={dropdownItem.url}>{dropdownItem.title}</Link>
+                    </ul>
+                  ))}
+                </div>
+              )}
+            </>
+          )
+          
+                      : (
+          <>
+            
+          </>
+        )}
+          {link.text === "Shop" ? 
+          (
+            
+            <>
+           
+          
+              {link.dropdown && (
+                <div className="dropdown_container_2">
+                  {link.dropdown.map((dropdownItem,dropdownid) => (
+                    <>
+                   <ul key={dropdownid} className="shop_dropdown" style={{listStyleType:'none'}}>
+<Link to={dropdownItem.url} >{dropdownItem.title}
+</Link>
+
+                    {dropdownItem.list.map((i,id)=>(
+                     
+                      <li style={{position:'relative',width:'140px',color: '#6e6e6e',fontSize:'16px',marginTop:'20px'}}>
+                      {i.navtitle}
+                      {i.hot && (
+                      <span className="hot_dropdown">
+                        <svg
+                          stroke="currentColor"
+                          fill="#e62e05"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z"
+                          ></path>
+                        </svg>
+                        <p>{i.hot}</p>
+                      </span>
+                    )}
+                     {i.new && (
+                      <span className="new_dropdown">
+                        <svg
+                          stroke="currentColor"
+                          fill="#28a745"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z"
+                          ></path>
+                        </svg>
+                        <p>{i.new}</p>
+                      </span>
+                    )}
+                      </li>
+                    
+                    ))}
+                    
+                    
+                    </ul>
+                  {dropdownItem.img ?   <img src={dropdownItem.img} alt="" /> : <></>}
+                    </>
+                  ))}
+                  
+                </div>
+              )}
+            </>
+          )
+          
+                      : (
+          <>
+            
+          </>
+        )}
+        {link.text === "Featured" ? 
+          (
+            
+            <>
+           
+          
+              {link.dropdown && (
+                <div className="dropdown_container_3">
+                  {link.dropdown.map((dropdownItem,dropdownid) => (
+                    <>
+                     {dropdownItem.img ?   <iframe src={dropdownItem.img} frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>  : <></>}
+                  
+                  <ul key={dropdownid} className="featured_dropdown" style={{listStyleType:'none'}}>
+<Link to={dropdownItem.url} >{dropdownItem.title}
+</Link>
+
+                    {dropdownItem.list.map((i,id)=>(
+                     
+                      <li style={{position:'relative',width:'140px',color: '#6e6e6e',fontSize:'16px',marginTop:'20px'}}>
+                      {i.navtitle}
+                      {i.hot && (
+                      <span className="hot_dropdown">
+                        <svg
+                          stroke="currentColor"
+                          fill="#e62e05"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z"
+                          ></path>
+                        </svg>
+                        <p>{i.hot}</p>
+                      </span>
+                    )}
+                     {i.new && (
+                      <span className="new_dropdown">
+                        <svg
+                          stroke="currentColor"
+                          fill="#28a745"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z"
+                          ></path>
+                        </svg>
+                        <p>{i.new}</p>
+                      </span>
+                    )}
+                      </li>
+                    
+                    ))}
+                    
+                    
+                    </ul>
+                 
+                 
+                    </>
+                  ))}
+                  
+                </div>
+              )}
+            </>
+          )
+          
+                      : (
+          <>
+            
+          </>
+        )}
+        {link.text === "Pages" ? 
+          (
+            
+            <>
+           
+          
+              {link.dropdown && (
+                <div className="dropdown_container_4">
+                  {link.dropdown.map((dropdownItem,dropdownid) => (
+                    <>
+                     {dropdownItem.img ?   <iframe src={dropdownItem.img} frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>  : <></>}
+                  
+                  <ul key={dropdownid} className="pages_dropdown" style={{listStyleType:'none'}}>
+<Link to={dropdownItem.url} >{dropdownItem.title}
+</Link>
+
+                    {dropdownItem.list.map((i,id)=>(
+                     
+                      <li style={{position:'relative',width:'140px',color: '#6e6e6e',fontSize:'16px',marginTop:'20px'}}>
+                      <Link to={i.url}>{i.navtitle}</Link>
+                      {i.hot && (
+                      <span className="hot_dropdown">
+                        <svg
+                          stroke="currentColor"
+                          fill="#e62e05"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z"
+                          ></path>
+                        </svg>
+                        <p>{i.hot}</p>
+                      </span>
+                    )}
+                     {i.new && (
+                      <span className="new_dropdown">
+                        <svg
+                          stroke="currentColor"
+                          fill="#28a745"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z"
+                          ></path>
+                        </svg>
+                        <p>{i.new}</p>
+                      </span>
+                    )}
+                      </li>
+                    
+                    ))}
+                    
+                    
+                    </ul>
+                 
+                 
+                    </>
+                  ))}
+                  
+                </div>
+              )}
+            </>
+          )
+          
+                      : (
+          <>
+            
+          </>
+        )}
                   </li>
+
+
+
                 ))}
               </ul>
+              
               <div className="icons">
                 <FiSearch />
                 
